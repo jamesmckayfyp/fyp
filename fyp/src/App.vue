@@ -5,9 +5,11 @@
       <router-link to="/about">About</router-link>
     </div>
     <router-view /> -->
-    Boiler plate files removed
+    <h2>FYP</h2>
   </div>
 </template>
 
 <style lang="less">
+  @import "./less/main.less";
+
 </style>
