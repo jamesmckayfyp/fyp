@@ -1,6 +1,6 @@
 <template>
   <div id="nav-2">
-    Nav 2
+    <!-- Nav 2 -->
   </div>
 </template>
 

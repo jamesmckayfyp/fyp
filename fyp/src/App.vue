@@ -1,15 +1,24 @@
 <template>
   <div id="app">
-    <h2>FYP</h2>
-    <div id="nav">
-      <router-link to="/nav1">Nav 1</router-link>
-      <router-link to="/nav2">Nav 2</router-link> 
-      <router-link to="/nav3">Nav 3</router-link>
-    </div>
-    <router-view />
+    <Header />
+    <Content />
   </div>
 </template>
+
+<script>
+import Header from './components/Header'
+import Content from './components/Content'
+
+export default {
+  name: 'App',
+  components: {
+    Header,
+    Content,
+  }
+}
+</script>
 
 <style lang="less">
   @import "./less/main.less";
 </style>
+
