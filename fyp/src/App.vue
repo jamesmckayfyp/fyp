@@ -1,15 +1,15 @@
 <template>
   <div id="app">
-    <!-- <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view /> -->
     <h2>FYP</h2>
+    <div id="nav">
+      <router-link to="/nav1">Nav 1</router-link>
+      <router-link to="/nav2">Nav 2</router-link> 
+      <router-link to="/nav3">Nav 3</router-link>
+    </div>
+    <router-view />
   </div>
 </template>
 
 <style lang="less">
   @import "./less/main.less";
-
 </style>
