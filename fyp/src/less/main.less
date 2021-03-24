@@ -18,12 +18,14 @@ body {
 // CONTAINER STYLES
 .container {
     margin: 0 50px;
+    display: flex;
+    justify-content: space-between;
 }
 
 // EXAMPLE CONTENT
 .ec {
     .border-shadow();
-    
+
     position: relative;
 
     width: 500px;
@@ -77,5 +79,19 @@ body {
             font-size: 20px;
             font-weight: 500;
         }
+    }
+}
+
+// WELCOME COMPONENT
+.welcome {
+    width: 500px;
+
+    h1{
+        color: @text-colour;
+        font-size: 55px;
+    }
+    p{
+        color: @text-colour;
+        font-size: 30px;
     }
 }
