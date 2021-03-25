@@ -1,7 +1,9 @@
 <template>
   <div class="header">
-      <div class="logo">Brand</div>
+    <div class="header-content">
+      <div class="logo">statpad</div>
       <Navigation />
+    </div>
   </div>
 </template>
 

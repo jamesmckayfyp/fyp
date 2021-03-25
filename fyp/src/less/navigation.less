@@ -7,7 +7,7 @@
     justify-content: center;
     align-items: center;
     border-top: @border-colour solid 2px;
-    background: @bg-colour;
+    background: @primary-colour;
 
     ul {
         display: flex;
@@ -16,7 +16,11 @@
 
         a{
             color: @text-colour;
-            font-size: 20px;
+            font-size: 18px;
+        }
+
+        .nav-cta{
+            display: none;
         }
     }
 
@@ -31,7 +35,19 @@
                 gap: 60px;
         
                 a{
-                    font-size: 26px;
+                    font-size: 22px;
+                }
+
+                .nav-cta {
+                    display: block;
+
+                    a{
+                        background: @secondary-colour;
+                        padding: 10px;
+                        border-radius: 10px;
+                        font-weight: 600;
+                        .box-shadow();
+                    }
                 }
             }
         }
