@@ -1,9 +1,8 @@
 <template>
-    <div class="header">
-        <div class="logo">Brand</div>
-        <Navigation />
-        <div class="cta">CTA</div>
-    </div>
+  <div class="header">
+      <div class="logo">Brand</div>
+      <Navigation />
+  </div>
 </template>
 
 <script>
