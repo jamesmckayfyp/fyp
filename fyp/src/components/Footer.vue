@@ -1,7 +1,7 @@
 <template>
     <div class="footer">
         <div class="footer__section">
-            Brand
+            statpad 2021 ©
         </div>
         <div class="footer__section">
             Links

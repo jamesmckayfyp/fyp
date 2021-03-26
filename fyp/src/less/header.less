@@ -1,5 +1,6 @@
 .header {
     background: @primary-colour;
+    .box-shadow();
 
     .header-content{
         display: flex;
@@ -43,6 +44,16 @@
                 background: @text-colour;
                 transform: rotate(45deg);
                 margin-left: 15px;
+                animation: rotation 5s infinite linear;
+            }
+
+            &:hover {
+                color: @secondary-colour;
+                transition: 0.5s;
+
+                &::after {
+                    background: @secondary-colour;
+                }
             }
         }
     }

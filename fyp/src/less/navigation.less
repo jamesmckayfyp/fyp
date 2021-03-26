@@ -17,6 +17,11 @@
         a{
             color: @text-colour;
             font-size: 18px;
+
+            &:hover {
+                color: @secondary-colour;
+                transition: 0.5s;
+            }
         }
 
         .nav-cta{
@@ -43,10 +48,16 @@
 
                     a{
                         background: @secondary-colour;
+                        color: @text-colour;
                         padding: 10px;
                         border-radius: 10px;
                         font-weight: 600;
                         .box-shadow();
+
+                        &:hover{
+                            background: darken(@secondary-colour, 15%);
+                            transition: 0.5s;
+                        }
                     }
                 }
             }
