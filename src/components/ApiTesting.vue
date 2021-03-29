@@ -12,6 +12,7 @@
 <script>
 export default {
   name: "ApiTesting",
+  headers: { 'X-Auth-Token': ' 9b97f93053334beda3c0fa8152196ff9' },
   data() {
     return {
       data: {},
