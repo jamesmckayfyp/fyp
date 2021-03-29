@@ -1,9 +1,4 @@
-# fyp
-
-## Project setup
-```
-npm install
-```
+# fyp - StatPad
 
 ### Compiles and hot-reloads for development
 ```
