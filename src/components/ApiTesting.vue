@@ -12,7 +12,6 @@
 <script>
 export default {
   name: "ApiTesting",
-  headers: { 'X-Auth-Token': ' 9b97f93053334beda3c0fa8152196ff9' },
   data() {
     return {
       data: {},
@@ -24,7 +23,12 @@ export default {
   methods: {
     async getName() {
       const res = await fetch(
-        "https://api.football-data.org/v2/competitions/PL/standings"
+        "https://api.football-data.org/v2/competitions/PL/standings",
+        {
+          headers: {
+            "X-Auth-Token" : "9b97f93053334beda3c0fa8152196ff9"
+          }
+        }
       );
       const data = await res.json();
       this.data = data;
