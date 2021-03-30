@@ -4,7 +4,10 @@
       <Welcome /> 
       <LiveScores />
     </div>
-    <ApiTesting />
+    <div class="flex-box">
+      <ApiTesting />
+      <ChartTesting />
+    </div>
   </div>
 </template>
 
@@ -12,6 +15,7 @@
 import Welcome from './Welcome'
 import LiveScores from './LiveScores'
 import ApiTesting from './ApiTesting'
+import ChartTesting from './ChartTesting'
 
 export default {
   name: 'Content',
@@ -19,6 +23,7 @@ export default {
     Welcome,
     LiveScores,
     ApiTesting,
+    ChartTesting,
   }
 }
 </script>
