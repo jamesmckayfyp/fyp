@@ -1,24 +1,17 @@
-.ls {
-    width: 100%;
-    height: 300px;
-    background: @primary-colour;
-    .rounded();
-    .box-shadow();
+.live-scores {
+    flex: 1;
+    .component-block();
 
-    @media @mobile {
-        flex: 1;
-    }
-
-    &--block{
+    &--block {
         display: flex;
         justify-content: space-between;
         flex-direction: column;
         width: 100%;
-        height: 300px;      
+        height: 300px;
 
-        &__heading{
+        &__heading {
             color: @primary-colour;
-            background: @border-colour;
+            background: @secondary-colour;
             height: 40px;
             border-radius: 10px 10px 0 0;
             display: flex;
@@ -28,27 +21,22 @@
             font-weight: 600;
         }
 
-        &__content{
+        &__content {
             display: flex;
             justify-content: space-between;
             margin: 15px;
             font-size: 24px;
             background: black;
-            .rounded();
             padding: 10px;
+            .rounded();
 
-            @media @desktop{
-                font-size: 28px;
-                transition: ease all .5s;
-            }
-
-            .team{
+            .team {
                 display: flex;
                 align-items: center;
                 flex: 1;
             }
 
-            .home{
+            .home {
                 justify-content: flex-start;
 
                 &::after {
@@ -57,12 +45,12 @@
                     height: 25px;
                     width: 25px;
                     .circle();
-                    background: @text-colour;
+                    background: @secondary-colour;
                     margin-left: 15px;
                 }
             }
 
-            .away{
+            .away {
                 justify-content: flex-end;
 
                 &::before {
@@ -71,48 +59,20 @@
                     height: 25px;
                     width: 25px;
                     .circle();
-                    background: @text-colour;
+                    background: @secondary-colour;
                     margin-right: 15px;
                 }
             }
 
-            .score{
-                display: flex;
-                justify-content: center;
-                align-items: center;
+            .score {
+                .flex-center();
                 flex: 1;
             }
 
-            @media @mobile-s {
-                font-size: 20px;
-                transition: ease all .5s;
-
-                .home, .away{
-                    &::after, &::before{
-                        height: 15px;
-                        width: 15px;
-                    }
-                }
-            }
         }
 
-        &__cta{
-            height: 35px;
-            background: @secondary-colour;
-            color: @text-colour;
-            text-align: center;
-            .rounded();
-            margin: 15px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 18px;
-            font-weight: 500;
-
-            &:hover{
-                background: darken(@secondary-colour, 15%);
-                transition: 0.5s;
-            }
+        &__cta {
+            .component-cta();
         }
     }
 }

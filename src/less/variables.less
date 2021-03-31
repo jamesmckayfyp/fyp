@@ -2,23 +2,33 @@
 @import (css) url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
 
 // MEDIA QUERIES
-@mobile-s: ~'only screen and (max-width: 480px)';
-@mobile: ~'only screen and (min-width: 768px)';
-@tablet: ~'only screen and (min-width: 992px)';
-@desktop: ~'only screen and (min-width: 1200px)';
+@mobile-s: ~'only screen and (max-width: 480px)'; //smaller than mobile
+@mobile: ~'only screen and (min-width: 768px)'; //bigger than mobile
+@tablet: ~'only screen and (min-width: 992px)'; //bigger than tablet
+@desktop: ~'only screen and (min-width: 1200px)'; //bigger than desktop
 
 // FONTS
 @font-main: 'DM Sans', sans-serif;
 
 // BASE COLOURS
-@text-colour: #F2F4F0;
-@border-colour: #F2F4F0;
-@bg-colour: #26C052;
 @primary-colour: #232828;
-@secondary-colour: #22AF4A;
-@bg-gradient: linear-gradient(90deg, #83CF68 0.23%, #097B2A 99.82%);
+@secondary-colour: #F2F4F0;
+@accent-colour: #22AF4A;
 
+// BASE DARK
+@dark-primary-colour: darken(@primary-colour, 15%);
+@dark-secondary-colour: darken(@secondary-colour, 15%);
+@dark-accent-colour: darken(@accent-colour, 15%);
 
+// BASE LIGHT
+@light-primary-colour: lighten(@primary-colour, 15%);
+@light-secondary-colour: lighten(@secondary-colour, 15%);
+@light-accent-colour: lighten(@accent-colour, 15%);
 
+// GENERAL COLOURS
+@bg-colour: @accent-colour;
+@text-colour: @secondary-colour;
 
-
+// NAV COLOURS
+@nav-bg-colour: @primary-colour;
+@nav-text-colour: @text-colour;

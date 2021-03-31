@@ -1,65 +1,56 @@
-.navigation{
+.navigation {
     position: fixed;
     bottom: 0;
     width: 100%;
     height: 70px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-top: @border-colour solid 2px;
-    background: @primary-colour;
+    background: @nav-bg-colour;
+    .flex-center();
 
     ul {
-        display: flex;
-        justify-content: space-evenly;
+        .flex-even();
         width: 100%;
 
-        a{
-            color: @text-colour;
+        a {
+            color: @nav-text-colour;
             font-size: 18px;
 
-            &:hover, &:active {
-                color: @secondary-colour;
+            &:hover,
+            &:active {
+                color: @accent-colour;
                 transition: 0.5s;
             }
         }
 
-        .nav-cta{
+        .nav-cta {
             display: none;
         }
     }
 
-    @media @mobile{
+    @media @mobile {
         position: relative;
         width: auto;
         height: auto;
-        border: 0;
         background: none;
 
-            ul {
-                gap: 60px;
-        
-                a{
-                    font-size: 22px;
-                }
+        ul {
+            gap: 60px;
 
-                .nav-cta {
-                    display: block;
+            a {
+                font-size: 22px;
+            }
 
-                    a{
-                        background: @secondary-colour;
-                        color: @text-colour;
-                        padding: 10px;
-                        .rounded();
-                        font-weight: 600;
-                        .box-shadow();
+            .nav-cta {
+                display: flex;
+                .component-cta();
+                margin: 0;
+                padding: 10px;
 
-                        &:hover{
-                            background: darken(@secondary-colour, 15%);
-                            transition: 0.5s;
-                        }
+                a {
+                    &:hover {
+                        color: @nav-text-colour;
                     }
                 }
             }
         }
+    }
 }

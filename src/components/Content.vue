@@ -1,32 +1,22 @@
 <template>
   <div class="container">
-    <div class="flex-box">
       <Welcome />
-      <LiveScores /> 
-      <!-- <ThemeChange /> -->
-    </div>
-    <!-- <div class="flex-box">
-      <ApiTesting />
-      <ChartTesting />
-    </div> -->
+      <LiveScores />
+      <!-- <ApiTesting /> -->
   </div>
 </template>
 
 <script>
-import Welcome from './Welcome'
-import LiveScores from './LiveScores'
-import ApiTesting from './ApiTesting'
-import ChartTesting from './ChartTesting'
-import ThemeChange from './ThemeChange'
+import Welcome from "./Welcome";
+import LiveScores from "./LiveScores";
+import ApiTesting from "./ApiTesting";
 
 export default {
-  name: 'Content',
+  name: "Content",
   components: {
     Welcome,
     LiveScores,
     ApiTesting,
-    ChartTesting,
-    ThemeChange,
-  }
-}
+  },
+};
 </script>

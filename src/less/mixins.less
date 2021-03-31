@@ -1,24 +1,76 @@
+// BASE MIXINS
+.site-width {
+    width: 100%;
+
+    @media @mobile {
+        max-width: 1280px;
+        width: auto;
+        margin: auto;
+        padding: 0 30px;
+    }
+}
+
+// FLEX MIXINS
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-even {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
 // BOX SHADOW MIXIN
-.box-shadow{
-    -webkit-box-shadow: 10px 10px 20px -10px rgba(0,0,0,0.75);
-    -moz-box-shadow: 10px 10px 20px -10px rgba(0,0,0,0.75);
-    box-shadow: 10px 10px 20px -10px rgba(0,0,0,0.75);
+.box-shadow {
+    -webkit-box-shadow: 10px 10px 20px -10px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 20px -10px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 20px -10px rgba(0, 0, 0, 0.75);
 }
 
 // BORDER-RADIUS
-.rounded{
+.rounded {
     border-radius: 10px;
 }
-.circle{
+
+.circle {
     border-radius: 50px;
+}
+
+// COMPONTENT MIXINs
+.component-block {
+    width: 100%;
+    background: @primary-colour;
+    .rounded();
+    .box-shadow();
+}
+
+.component-cta {
+    background: @accent-colour;
+    color: @text-colour;
+    text-align: center;
+    margin: 15px;
+    padding: 5px;
+    font-size: 18px;
+    font-weight: 500;
+    .rounded();
+    .flex-center();
+
+    &:hover {
+        background: @dark-accent-colour;
+        transition: 0.5s;
+    }
 }
 
 // ROTATE ANIMATION
 @keyframes rotation {
     from {
-            -webkit-transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
     }
+
     to {
-            -webkit-transform: rotate(359deg);
+        -webkit-transform: rotate(359deg);
     }
 }

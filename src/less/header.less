@@ -1,29 +1,21 @@
 .header {
-    background: @primary-colour;
+    background: @nav-bg-colour;
     .box-shadow();
 
     .header-content{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
+        .flex-center();
+        .site-width();
         height: 70px;
-        border-bottom: @border-colour solid 2px;
 
         @media @mobile{
             justify-content: space-between;
-            max-width: 1280px;
-            width: auto;
-            height: 90px;
-            margin: auto;
-            padding: 0 30px;
-            border: 0;
+            height: 80px;
         }
 
         .logo {
             font-size: 30px;
             font-weight: 700;
-            color: @text-colour;
+            color: @nav-text-colour;
             text-align: center;
             display: flex;
             align-items: center;
@@ -32,27 +24,23 @@
                 font-size: 32px;
             }
 
-            @media @desktop{
-                font-size: 36px;
-            }
-
             &::after {
                 content: '';
                 display: inline-block;
                 height: 20px;
                 width: 20px;
-                background: @text-colour;
+                background: @nav-text-colour;
                 transform: rotate(45deg);
                 margin-left: 15px;
                 animation: rotation 5s infinite linear;
             }
 
             &:hover {
-                color: @secondary-colour;
+                color: @accent-colour;
                 transition: 0.5s;
 
                 &::after {
-                    background: @secondary-colour;
+                    background: @accent-colour;
                 }
             }
         }
