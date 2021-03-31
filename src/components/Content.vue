@@ -2,7 +2,7 @@
   <div class="container">
       <Welcome />
       <LiveScores />
-      <!-- <ApiTesting /> -->
+      <ApiTesting />
   </div>
 </template>
 

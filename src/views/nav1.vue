@@ -1,6 +1,7 @@
 <template>
   <div id="nav-1">
-    <!-- Nav 1 -->
+    <Header />
+    <Content />
   </div>
 </template>
 
