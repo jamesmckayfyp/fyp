@@ -1,0 +1,26 @@
+.league-table {
+    .component-block();
+    .flex-center();
+
+    ul {
+        text-align: left;
+        margin: 20px;
+
+        font-size: 12px;
+
+        @media @mobile {
+            font-size: 16px;
+        }
+    }
+
+    #games,
+    #wins,
+    #draws,
+    #losses {
+        display: none;
+
+        @media @mobile {
+            display: initial;
+        }
+    }
+}

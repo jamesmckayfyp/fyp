@@ -2,21 +2,21 @@
   <div class="container">
       <Welcome />
       <LiveScores />
-      <ApiTesting />
+      <LeagueTable />
   </div>
 </template>
 
 <script>
 import Welcome from "./Welcome";
 import LiveScores from "./LiveScores";
-import ApiTesting from "./ApiTesting";
+import LeagueTable from "./LeagueTable";
 
 export default {
   name: "Content",
   components: {
     Welcome,
     LiveScores,
-    ApiTesting,
+    LeagueTable,
   },
 };
 </script>
