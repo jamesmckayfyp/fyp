@@ -1,26 +1,122 @@
-.league-table {
-    .component-block();
-    .flex-center();
+.league-table-block {
+    flex: 1 100%;
+    .league-table {
+        .component-block();
+        .flex-even();
+        flex-direction: column;
 
-    ul {
-        text-align: left;
-        margin: 20px;
+        &--row {
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            padding: 5px 0;
 
-        font-size: 12px;
+            &__column {
+                display: flex;
+                flex-direction: column;
+                font-size: 14px;
+                flex: 0 1 5%;
 
-        @media @mobile {
-            font-size: 16px;
+                @media @mobile {
+                    font-size: 18px;
+                }
+
+                div {
+                    img {
+                        width: 10px;
+                        
+                        @media @mobile {
+                            width: 14px;
+                        }
+                    }
+                }
+            }
+
+            .team {
+                flex: 0 1 50%;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+
+                @media @mobile {
+                    flex: 0 1 40%;
+                }
+
+                @media @mobile-s {
+                    flex: 0 1 70%;
+                }
+            }
+
+            .pos {
+                padding-left: 5px;
+
+                @media @mobile {
+                    padding-left: 10px;
+                }
+            }
+
+            .points {
+                padding-right: 5px;
+
+                @media @mobile {
+                    padding-right: 10px;
+                }
+            }
+
+            .pos {
+                align-items: flex-start;
+            }
+
+            .games,
+            .w,
+            .d,
+            .l,
+            .gf,
+            .ga,
+            .gd,
+            .points {
+                align-items: flex-end;
+            }
+
+            .gf,
+            .ga,
+            .gd {
+                display: none;
+            }
+
+            @media @mobile-s {
+
+                .games,
+                .w,
+                .d,
+                .l {
+                    display: none;
+                }
+            }
+
+            @media @mobile {
+
+                .games,
+                .w,
+                .d,
+                .l,
+                .gf,
+                .ga,
+                .gd {
+                    display: flex;
+                }
+            }
         }
-    }
 
-    #games,
-    #wins,
-    #draws,
-    #losses {
-        display: none;
+        .head {
+            background: @secondary-colour;
+            color: @primary-colour;
+            border-radius: 10px 10px 0 0;
+            font-weight: 600;
+        }
 
-        @media @mobile {
-            display: initial;
+        .data {
+            border-radius: 0 0 10px 10px;
         }
     }
 }

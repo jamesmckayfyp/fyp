@@ -1,33 +1,32 @@
 <template>
-  <div class="league-table">
-      <ul id="position ">
-        <li>Position</li>
-        <li v-for="data in plTable" :key="data.position">{{data.position}}</li>
-      </ul>
-      <ul id="team">
-        <li>Team</li>
-        <li v-for="data in plTable" :key="data.name">{{data.team.name}}</li>
-      </ul>
-      <ul id="games">
-        <li>Games Played</li>
-        <li v-for="data in plTable" :key="data.games">{{data.playedGames}}</li>
-      </ul>
-      <ul id="wins">
-        <li>W</li>
-        <li v-for="data in plTable" :key="data.won">{{data.won}}</li>
-      </ul>
-      <ul id="draws">
-        <li>D</li>
-        <li v-for="data in plTable" :key="data.draw">{{data.draw}}</li>
-      </ul>
-      <ul id="losses">
-        <li>L</li>
-        <li v-for="data in plTable" :key="data.lost">{{data.lost}}</li>
-      </ul>
-      <ul id="points">
-        <li>Points</li>
-        <li v-for="data in plTable" :key="data.points">{{data.points}}</li>
-      </ul>
+  <div class="league-table-block">
+    <!-- <h2>{{leagueName}} <span>{{leagueCountry}}</span></h2> -->
+    <div class="league-table">
+      <div class="league-table--row head">
+        <div class="league-table--row__column pos">#</div>
+        <div class="league-table--row__column team">Team</div>
+        <div class="league-table--row__column games">PL</div>
+        <div class="league-table--row__column w">W</div>
+        <div class="league-table--row__column d">D</div>
+        <div class="league-table--row__column l">L</div>
+        <div class="league-table--row__column gf">GF</div>
+        <div class="league-table--row__column ga">GA</div>
+        <div class="league-table--row__column gd">GD</div>
+        <div class="league-table--row__column points">PTS</div>
+      </div>
+      <div class="league-table--row data">
+        <div class="league-table--row__column pos"><div v-for="data in leagueTable" :key="data.position">{{data.position}}</div></div>
+        <div class="league-table--row__column team"><div v-for="data in leagueTable" :key="data.name"><img :src="data.team.crestUrl" :alt="data.team.name"><img/>{{data.team.name}}</div></div>
+        <div class="league-table--row__column games"><div v-for="data in leagueTable" :key="data.games">{{data.playedGames}}</div></div>
+        <div class="league-table--row__column w"><div v-for="data in leagueTable" :key="data.won">{{data.won}}</div></div>
+        <div class="league-table--row__column d"><div v-for="data in leagueTable" :key="data.draw">{{data.draw}}</div></div>
+        <div class="league-table--row__column l"><div v-for="data in leagueTable" :key="data.lost">{{data.lost}}</div></div>
+        <div class="league-table--row__column gf"><div v-for="data in leagueTable" :key="data.goalsFor">{{data.goalsFor}}</div></div>
+        <div class="league-table--row__column ga"><div v-for="data in leagueTable" :key="data.goalsAgainst">{{data.goalsAgainst}}</div></div>
+        <div class="league-table--row__column gd"><div v-for="data in leagueTable" :key="data.goalDifference">{{data.goalDifference}}</div></div>
+        <div class="league-table--row__column points"><div v-for="data in leagueTable" :key="data.points">{{data.points}}</div></div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -37,7 +36,9 @@ export default {
   data() {
     return {
       data: [],
-      plTable : []
+      leagueTable : [],
+      leagueName : [],
+      leagueCountry : []
     };
   },
   beforeMount() {
@@ -54,7 +55,9 @@ export default {
         }
       );
       const data = await res.json();
-      this.plTable = data.standings[0].table;
+      this.leagueTable = data.standings[0].table;
+      this.leagueName = data.competition.name;
+      this.leagueCountry = data.competition.area.name;
     },
   },
 };
