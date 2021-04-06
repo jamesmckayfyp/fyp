@@ -1,7 +1,9 @@
 <template>
   <div class="header">
     <div class="header-content">
-      <div class="logo">statpad</div>
+      <div class="logo">
+        <router-link to="/Home">statpad</router-link>
+      </div>
       <Navigation />
     </div>
   </div>

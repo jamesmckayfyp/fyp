@@ -1,33 +1,43 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
-import nav1 from "../views/nav1.vue";
+import Home from "../views/Home.vue";
+import Games from "../views/Games.vue";
+import Tables from "../views/Tables.vue";
+import Players from "../views/Players.vue";
+import MyTeam from "../views/MyTeam.vue";
 
 Vue.use(VueRouter);
 
 const routes = [
   {
-    path: "/nav1",
-    name: "nav1",
-    component: nav1,
+    path: "/Home",
+    name: "Home",
+    component: Home,
   },
   {
-    path: "/nav2",
-    name: "nav2",
+    path: "/Games",
+    name: "Games",
     component: () =>
-      import(/* webpackChunkName: "about" */ "../views/nav2.vue"),
+      import(/* webpackChunkName: "games" */ "../views/Games.vue"),
   },
   {
-    path: "/nav3",
-    name: "nav3",
+    path: "/Tables",
+    name: "Tables",
     component: () =>
-      import(/* webpackChunkName: "about" */ "../views/nav3.vue"),
+      import(/* webpackChunkName: "tables" */ "../views/Tables.vue"),
   },
   {
-    path: "/nav4",
-    name: "nav4",
+    path: "/Players",
+    name: "Players",
     component: () =>
-      import(/* webpackChunkName: "about" */ "../views/nav4.vue"),
+      import(/* webpackChunkName: "players" */ "../views/Players.vue"),
   },
+  {
+    path: "/MyTeam",
+    name: "MyTeam",
+    component: () =>
+      import(/* webpackChunkName: "myteam" */ "../views/MyTeam.vue"),
+  }
 ];
 
 const router = new VueRouter({

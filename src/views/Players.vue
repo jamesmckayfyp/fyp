@@ -1,12 +1,12 @@
 <template>
-  <div id="nav-4">
-    <!-- Nav 4 -->
+  <div id="Players">
+      Players
   </div>
 </template>
 
 <script>
 export default {
-  name: "nav4",
+  name: "Players",
   components: {},
 };
 </script>
