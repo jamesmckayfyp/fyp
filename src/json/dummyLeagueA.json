@@ -1,0 +1,68 @@
+{
+    "info": {
+        "name": "League A",
+        "country": "England"
+    },
+    "table": [
+        {
+            "position": 1,
+            "team": "English Team A",
+            "playedGames": 0,
+            "won": 0,
+            "draw": 0,
+            "lost": 0,
+            "points": 0,
+            "goalsFor": 0,
+            "goalsAgainst": 0,
+            "goalDifference": 0
+        },
+        {
+            "position": 2,
+            "team": "English Team B",
+            "playedGames": 0,
+            "won": 0,
+            "draw": 0,
+            "lost": 0,
+            "points": 0,
+            "goalsFor": 0,
+            "goalsAgainst": 0,
+            "goalDifference": 0
+        },
+        {
+            "position": 3,
+            "team": "English Team C",
+            "playedGames": 0,
+            "won": 0,
+            "draw": 0,
+            "lost": 0,
+            "points": 0,
+            "goalsFor": 0,
+            "goalsAgainst": 0,
+            "goalDifference": 0
+        },
+        {
+            "position": 4,
+            "team": "English Team D",
+            "playedGames": 0,
+            "won": 0,
+            "draw": 0,
+            "lost": 0,
+            "points": 0,
+            "goalsFor": 0,
+            "goalsAgainst": 0,
+            "goalDifference": 0
+        },
+        {
+            "position": 5,
+            "team": "English Team E",
+            "playedGames": 0,
+            "won": 0,
+            "draw": 0,
+            "lost": 0,
+            "points": 0,
+            "goalsFor": 0,
+            "goalsAgainst": 0,
+            "goalDifference": 0
+        }
+    ]
+}

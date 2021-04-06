@@ -3,6 +3,7 @@
       <Welcome />
       <LiveScores />
       <LeagueTable />
+      <LeagueTest/>
   </div>
 </template>
 
@@ -10,6 +11,7 @@
 import Welcome from "./Welcome";
 import LiveScores from "./LiveScores";
 import LeagueTable from "./LeagueTable";
+import LeagueTest from "./LeagueTest";
 
 export default {
   name: "Content",
@@ -17,6 +19,7 @@ export default {
     Welcome,
     LiveScores,
     LeagueTable,
+    LeagueTest,
   },
 };
 </script>

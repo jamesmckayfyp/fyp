@@ -1,0 +1,68 @@
+{
+    "info": {
+        "name": "League C",
+        "country": "Spain"
+    },
+    "table": [
+        {
+            "position": 1,
+            "team": "Spanish Team A",
+            "playedGames": 0,
+            "won": 0,
+            "draw": 0,
+            "lost": 0,
+            "points": 0,
+            "goalsFor": 0,
+            "goalsAgainst": 0,
+            "goalDifference": 0
+        },
+        {
+            "position": 2,
+            "team": "Spanish Team B",
+            "playedGames": 0,
+            "won": 0,
+            "draw": 0,
+            "lost": 0,
+            "points": 0,
+            "goalsFor": 0,
+            "goalsAgainst": 0,
+            "goalDifference": 0
+        },
+        {
+            "position": 3,
+            "team": "Spanish Team C",
+            "playedGames": 0,
+            "won": 0,
+            "draw": 0,
+            "lost": 0,
+            "points": 0,
+            "goalsFor": 0,
+            "goalsAgainst": 0,
+            "goalDifference": 0
+        },
+        {
+            "position": 4,
+            "team": "Spanish Team D",
+            "playedGames": 0,
+            "won": 0,
+            "draw": 0,
+            "lost": 0,
+            "points": 0,
+            "goalsFor": 0,
+            "goalsAgainst": 0,
+            "goalDifference": 0
+        },
+        {
+            "position": 5,
+            "team": "Spanish Team E",
+            "playedGames": 0,
+            "won": 0,
+            "draw": 0,
+            "lost": 0,
+            "points": 0,
+            "goalsFor": 0,
+            "goalsAgainst": 0,
+            "goalDifference": 0
+        }
+    ]
+}
