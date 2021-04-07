@@ -9,6 +9,7 @@ import HomeContent from "../components/Home/HomeContent";
 
 export default {
   name: "Home",
+  title: 'Home | statpad',
   components: {
     HomeContent
   },
