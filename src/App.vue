@@ -1,8 +1,8 @@
 <template>
   <div id="app">
     <Header />
-    <!-- <Footer /> -->
     <router-view />
+    <Footer />
   </div>
 </template>
 
@@ -20,6 +20,6 @@ export default {
 </script>
 
 <style lang="less">
-@import "./less/main.less";
+@import "./less/main/main.less";
 </style>
 
