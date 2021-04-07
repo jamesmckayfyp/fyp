@@ -1,7 +1,7 @@
 <template>
     <div class="live-scores">
         <div class="live-scores--block">
-            <div class="live-scores--block__heading">Live Scores</div>
+            <div class="live-scores--block__heading">Latest Scores</div>
             <div class="live-scores--block__content">
                 <div class="team home">{{homeTeam}}</div>
                 <div class="score">{{homeScore}} - {{awayScore}}</div>
@@ -18,10 +18,10 @@ export default {
   name: 'LiveScores',
   data() {
       return {
-        homeTeam: 'Team',
-        awayTeam: 'Team',
-        homeScore: 0,
-        awayScore: 0
+        homeTeam: "PSG",
+        awayTeam: "Ole's Tricky Reds",
+        homeScore: 1,
+        awayScore: 3
       }
   }
 }
