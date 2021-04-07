@@ -1,6 +1,6 @@
 <template>
   <div id="tables">
-      <TablesContent />
+      <!-- <TablesContent /> -->
   </div>
 </template>
 

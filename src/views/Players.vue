@@ -1,6 +1,5 @@
 <template>
-  <div id="Players">
-      Players
+  <div id="players">
   </div>
 </template>
 

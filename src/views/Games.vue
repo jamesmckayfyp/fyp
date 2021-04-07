@@ -1,6 +1,5 @@
 <template>
   <div id="games">
-      Games
   </div>
 </template>
 

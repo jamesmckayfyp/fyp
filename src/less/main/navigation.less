@@ -13,11 +13,55 @@
         a {
             color: @nav-text-colour;
             font-size: 18px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
 
             &:hover,
             &:active {
                 color: @accent-colour;
                 transition: 0.5s;
+            }
+
+            .nav-text {
+                display: none;
+            }
+
+            .icon-games, .icon-tables, .icon-players {
+                width: 50px;
+                height: 34px;
+
+                &:hover,
+                &:active {
+                    transition: 0.5s;
+                }
+
+                @media @mobile {
+                    display: none;
+                }
+            }
+
+            .icon-games {
+                background-image: url(../../assets/games.svg);
+                &:hover,
+                &:active {
+                    background-image: url(../../assets/games-hover.svg);
+                }
+            }
+            .icon-tables {
+                background-image: url(../../assets/tables.svg);
+                &:hover,
+                &:active {
+                    background-image: url(../../assets/tables-hover.svg);
+                }
+            }
+            .icon-players {
+                background-image: url(../../assets/players.svg);
+                &:hover,
+                &:active {
+                    background-image: url(../../assets/players-hover.svg);
+                }
             }
         }
 
@@ -37,10 +81,14 @@
 
             a {
                 font-size: 22px;
+
+                .nav-text {
+                    display: flex;
+                }
             }
 
             .nav-cta {
-                display: flex;
+                display: none;
                 .component-cta();
                 margin: 0;
                 padding: 10px;

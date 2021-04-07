@@ -7,7 +7,7 @@
                 <div class="score">{{homeScore}} - {{awayScore}}</div>
                 <div class="team away">{{awayTeam}}</div>
             </div>
-            <div class="live-scores--block__cta">View All</div>
+            <router-link to="/Games" class="live-scores--block__cta" alt="View All">View All</router-link>
         </div>
     </div>
 </template>
