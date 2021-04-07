@@ -1,7 +1,8 @@
 <template>
   <div class="container">
-      <LeagueTable />
-      <LeagueTest/>
+      <!-- <LeagueTable />
+      <LeagueTest/> -->
+      Tables
   </div>
 </template>
 

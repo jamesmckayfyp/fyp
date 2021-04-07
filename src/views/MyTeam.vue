@@ -1,12 +1,16 @@
 <template>
   <div id="my-team">
-      My Team
+      <MyTeamContent />
   </div>
 </template>
 
 <script>
+import MyTeamContent from "../components/MyTeam/MyTeamContent";
+
 export default {
   name: "MyTeam",
-  components: {},
+  components: {
+    MyTeamContent
+  },
 };
 </script>

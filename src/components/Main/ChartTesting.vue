@@ -6,7 +6,7 @@
 
 <script>
 import Chart from 'chart.js'
-import lineChart from '../js/chartTesting.js'
+import lineChart from '../../js/chartTesting.js'
 
 export default {
   name: 'ChartTesting',

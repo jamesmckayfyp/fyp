@@ -73,9 +73,9 @@
 </template>
 
 <script>
-import dummyLeagueA from "../json/dummyLeagueA.json";
-import dummyLeagueB from "../json/dummyLeagueB.json";
-import dummyLeagueC from "../json/dummyLeagueC.json";
+import dummyLeagueA from "../../json/dummyLeagueA.json";
+import dummyLeagueB from "../../json/dummyLeagueB.json";
+import dummyLeagueC from "../../json/dummyLeagueC.json";
 
 export default {
   name: "LeagueTest",

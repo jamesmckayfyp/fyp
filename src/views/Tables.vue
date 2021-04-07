@@ -1,11 +1,11 @@
 <template>
   <div id="tables">
-      <!-- <TablesContent /> -->
+      <TablesContent />
   </div>
 </template>
 
 <script>
-import TablesContent from "../components/TablesContent";
+import TablesContent from "../components/Tables/TablesContent";
 
 export default {
   name: "Tables",
