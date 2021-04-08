@@ -1,10 +1,11 @@
 .footer {
-    width: 100%;
+    background: @dark-accent-colour;
+    
+    &--content{
     height: 150px;
     margin: 0 0 70px 0;
+    .site-width();
     .flex-even();
-
-    background: @dark-accent-colour;
 
     @media @mobile-s{
         flex-direction: column;
@@ -12,7 +13,7 @@
     }
 
     @media @mobile{
-        margin: 0;
+        margin: 0 auto;
     }
 
     &__section{
@@ -33,5 +34,5 @@
                 }
             }
         }
-    }
+    }}
 }
