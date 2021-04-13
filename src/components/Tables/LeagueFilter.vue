@@ -16,11 +16,6 @@
 
 export default {
    name: "LeagueFilter",
-   data() {
-        return {
-        leagueName : "Premier League",
-        leagueCountry : "England"
-        }
-    } 
+   props : ["leagueName", "leagueCountry"]
 }
 </script>

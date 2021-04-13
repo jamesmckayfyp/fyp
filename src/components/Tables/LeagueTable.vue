@@ -1,6 +1,5 @@
 <template>
   <div class="league-table-block">
-    <h2>{{leagueName}} <span>({{leagueCountry}})</span></h2>
     <div class="league-table">
       <div class="league-table--row head">
         <div class="league-table--row__column pos">#</div>

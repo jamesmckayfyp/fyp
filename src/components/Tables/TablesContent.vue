@@ -1,31 +1,34 @@
 <template>
   <div class="container">
-      <LeagueFilter /> 
-      <LeagueTables />
-      <LeagueCharts />
-      <LeagueScorers /> 
-      <LeagueAssists />
-      <LeagueCombined />
+      <LeagueFilter leagueName="Premier League" leagueCountry="England"/> 
+      <!-- <LeagueTables /> -->
+      <LeagueTable />
+      <!-- <LeagueCharts leagueName="Premier League" /> -->
+      <!-- <LeagueScorers />  -->
+      <!-- <LeagueAssists /> -->
+      <!-- <LeagueCombined /> -->
   </div>
 </template>
 
 <script>
-import LeagueTables from "./LeagueTables";
+import LeagueTable from "./LeagueTable";
 import LeagueFilter from "./LeagueFilter";
 import LeagueCharts from "./LeagueCharts";
 import LeagueScorers from "./LeagueScorers";
 import LeagueAssists from "./LeagueAssists";
 import LeagueCombined from "./LeagueCombined";
+import LeagueTest from "./LeagueTest";
 
 export default {
   name: "TablesContent",
   components: {
-    LeagueTables,
+    LeagueTable,
     LeagueFilter,
     LeagueCharts,
     LeagueScorers,
     LeagueAssists,
-    LeagueCombined
+    LeagueCombined,
+    LeagueTest
   },
 };
 </script>
