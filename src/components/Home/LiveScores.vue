@@ -19,7 +19,7 @@ export default {
   data() {
       return {
         homeTeam: "PSG",
-        awayTeam: "Ole's Tricky Reds",
+        awayTeam: "MUFC",
         homeScore: 1,
         awayScore: 3
       }

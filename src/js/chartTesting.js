@@ -1,5 +1,5 @@
 export const lineChart = {
-    type: "line",
+    type: "bar",
     data: {
       labels: ["Rooney", "Ronaldo", "Berbatov"],
       datasets: [
@@ -13,7 +13,7 @@ export const lineChart = {
       ]
     },
     options: {
-    //   responsive: true,
+      responsive: true,
       lineTension: 1,
       scales: {
         yAxes: [

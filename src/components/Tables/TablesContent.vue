@@ -1,20 +1,31 @@
 <template>
   <div class="container">
-      <!-- <LeagueTable />
-      <LeagueTest/> -->
-      Tables
+      <LeagueFilter /> 
+      <LeagueTables />
+      <LeagueCharts />
+      <LeagueScorers /> 
+      <LeagueAssists />
+      <LeagueCombined />
   </div>
 </template>
 
 <script>
-import LeagueTable from "./LeagueTable";
-import LeagueTest from "./LeagueTest";
+import LeagueTables from "./LeagueTables";
+import LeagueFilter from "./LeagueFilter";
+import LeagueCharts from "./LeagueCharts";
+import LeagueScorers from "./LeagueScorers";
+import LeagueAssists from "./LeagueAssists";
+import LeagueCombined from "./LeagueCombined";
 
 export default {
   name: "TablesContent",
   components: {
-    LeagueTable,
-    LeagueTest,
+    LeagueTables,
+    LeagueFilter,
+    LeagueCharts,
+    LeagueScorers,
+    LeagueAssists,
+    LeagueCombined
   },
 };
 </script>
