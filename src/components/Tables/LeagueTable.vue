@@ -21,7 +21,8 @@
         </div>
         <div class="league-table-block--row__column team">
           <div v-for="data in leagueTable" :key="data.name">
-            {{ data.team }}
+            <img :src="data.team.crestUrl" :alt="data.team.mediumName"><img/>
+            {{ data.team.mediumName }}
           </div>
         </div>
         <div class="league-table-block--row__column games">
@@ -31,8 +32,8 @@
         </div>
         <div class="league-table-block--row__column w">
           <div v-for="data in leagueTable" :key="data.won">
-              {{ data.won }}
-            </div>
+            {{ data.won }}
+          </div>
         </div>
         <div class="league-table-block--row__column d">
           <div v-for="data in leagueTable" :key="data.draw">
@@ -70,20 +71,18 @@
 </template>
 
 <script>
-import dummyLeagueA from "../../json/dummyLeagueA.json";
-import dummyLeagueB from "../../json/dummyLeagueB.json";
-import dummyLeagueC from "../../json/dummyLeagueC.json";
+import leagueA from "../../json/leagueA.json"; 
 
 export default {
-  name: "LeagueTest",
+  name: "LeagueTable",
   data() {
     return {
-                leagueName: dummyLeagueA.info.name,
-                leagueCountry: dummyLeagueA.info.country,
-                leagueTable: dummyLeagueA.table,
-           
-            }
-
+      leagueName: leagueA.competition.name,
+      leagueCountry: leagueA.competition.country,
+      leagueTable: leagueA.standings[0].table,
+      // leagueTableHome: leagueA.standings.table,
+      // leagueTableAway: leagueA.standings.table,
+    };
   },
 };
 </script>
