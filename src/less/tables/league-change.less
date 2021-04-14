@@ -1,0 +1,42 @@
+.league-change, .chart-change {
+    flex: 1 100%;
+
+    @media @mobile {
+        flex: 1 48%;
+    }
+
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+
+    &__cta {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex: 1;
+        background: @accent-colour;
+        border: 3px @secondary-colour solid;
+        height: 30px;
+        font-size: 16px;
+        font-weight: 500;
+        text-transform: uppercase;
+        .rounded();
+
+        &:hover, &:active {
+            background: @dark-accent-colour;
+            transition: 0.5s;
+        }
+    }
+}
+
+.league-change {
+    @media @mobile {
+        order: 1;
+    }
+}
+
+.chart-change {
+    @media @mobile {
+        order: 2;
+    }
+}

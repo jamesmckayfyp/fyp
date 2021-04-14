@@ -1,6 +1,12 @@
-.league-table-block {
-    flex: 1;
-    .league-table {
+.league-table {
+    flex: 1 100%;
+
+    @media @mobile {
+        flex: 1 48%;
+        order: 3;
+    }
+
+    .league-table-block {
         .component-block();
         .flex-even();
         flex-direction: column;

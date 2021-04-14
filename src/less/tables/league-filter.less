@@ -7,10 +7,14 @@
     .rounded();
     .box-shadow();
 
+    @media @mobile {
+        order: 0;
+    }
+
     &--info, &--dropdown {
         display: flex;
         align-items: center;
-        margin: 5px 10px;
+        margin: 5px 15px;
         height: 40px;
 
         @media @mobile {

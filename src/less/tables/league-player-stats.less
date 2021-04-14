@@ -1,10 +1,9 @@
-.league-charts {
+.league-scorers, .league-assists, .league-combined {
     .component-block();
     flex: 1 100%;
 
     @media @mobile {
-        flex: 1 48%;
-        order: 4;
+        flex: 1;
     }
 
     &--block {
@@ -17,4 +16,16 @@
             .component-content();
         }
     }
+}
+
+.league-scorers {
+    order: 5;
+}
+
+.league-assists {
+    order: 6;
+}
+
+.league-combined {
+    order: 7;
 }

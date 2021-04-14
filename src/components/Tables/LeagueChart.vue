@@ -10,7 +10,7 @@
 <script>
 
 export default {
-  name: 'LiveScores',
+  name: 'LeagueChart',
   props : ["leagueName"],
 
 }
