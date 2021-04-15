@@ -3,6 +3,7 @@
     <div class="league-table-block">
       <div class="league-table-block--row head">
         <div class="league-table-block--row__column pos">#</div>
+        <div class="league-table-block--row__column short-team">Team</div>
         <div class="league-table-block--row__column team">Team</div>
         <div class="league-table-block--row__column games">PL</div>
         <div class="league-table-block--row__column w">W</div>
@@ -19,9 +20,15 @@
             {{ data.position }}
           </div>
         </div>
+        <div class="league-table-block--row__column short-team">
+          <div v-for="data in leagueTable" :key="data.name">
+            <img :src="data.team.crestUrl" :alt="data.team.mediumName">
+            {{ data.team.shortName }}
+          </div>
+        </div>
         <div class="league-table-block--row__column team">
           <div v-for="data in leagueTable" :key="data.name">
-            <img :src="data.team.crestUrl" :alt="data.team.mediumName"><img/>
+            <img :src="data.team.crestUrl" :alt="data.team.mediumName">
             {{ data.team.mediumName }}
           </div>
         </div>

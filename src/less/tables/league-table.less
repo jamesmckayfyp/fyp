@@ -2,7 +2,7 @@
     flex: 1 100%;
 
     @media @mobile {
-        flex: 1 48%;
+        flex: 1 45%;
         order: 3;
     }
 
@@ -15,114 +15,101 @@
             display: flex;
             justify-content: space-around;
             width: 100%;
-            padding: 5px 0;
 
             &__column {
                 display: flex;
                 flex-direction: column;
                 font-size: 14px;
-                flex: 0 1 5%;
-
-                @media @mobile {
-                    font-size: 18px;
-                }
 
                 div {
                     img {
                         width: 10px;
-                        
-                        @media @mobile {
-                            width: 14px;
-                        }
+                        margin-right: 5px;
                     }
                 }
             }
 
-            .team {
-                flex: 0 1 50%;
-                overflow: hidden;
-                text-overflow: ellipsis;
-                white-space: nowrap;
-
-                @media @mobile {
-                    flex: 0 1 40%;
-                }
-
-                @media @mobile-s {
-                    flex: 0 1 70%;
-                }
-            }
-
+            // padding
             .pos {
-                padding-left: 5px;
-
-                @media @mobile {
-                    padding-left: 10px;
-                }
+                padding-left: 10px;
             }
-
             .points {
-                padding-right: 5px;
-
-                @media @mobile {
-                    padding-right: 10px;
-                }
+                padding-right: 10px;
             }
 
-            .pos {
+            // alignment
+            .pos, .team {
                 align-items: flex-start;
             }
-
-            .games,
-            .w,
-            .d,
-            .l,
-            .gf,
-            .ga,
-            .gd,
-            .points {
+            .games, .w, .d, .l, .gf, .ga, .gd, .points {
                 align-items: flex-end;
             }
 
-            .gf,
-            .ga,
-            .gd {
-                display: none;
-            }
-
+            // small mobile
             @media @mobile-s {
-
-                .games,
-                .w,
-                .d,
-                .l {
-                    display: none;
+                .team, .gf, .ga {
+                    display: none
+                }
+                .pos, .games, .w, .d, .l, .gd, .points {
+                    flex: 1 10.5%;
+                }
+                .short-team {
+                    flex: 1 25%;
                 }
             }
 
-            @media @mobile {
+            // standard
+            .team, .gf, .ga{
+                display: none
+            }
+            .pos, .games, .w, .d, .l, .gd, .points {
+                flex: 1 8%;
+            }
+            .short-team {
+                flex: 1 20%;
+            }
 
-                .games,
-                .w,
-                .d,
-                .l,
-                .gf,
-                .ga,
-                .gd {
+            @media @mobile {
+                .short-team, .gf, .ga{
+                    display: none
+                }
+                .pos, .games, .w, .d, .l, .gd, .points {
+                    flex: 1 8%;
+                }
+                .team {
                     display: flex;
+                    flex: 1 20%;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+            }
+
+            @media @desktop {
+                .gf, .ga {
+                    display: flex;
+                }
+                .pos, .games, .w, .d, .l, .gf, .ga, .gd, .points {
+                    flex: 1 8%;
+                }
+                .team {
+                    flex: 1 20%;
                 }
             }
         }
 
         .head {
-            background: @secondary-colour;
-            color: @primary-colour;
-            border-radius: 10px 10px 0 0;
-            font-weight: 600;
+            .component-head();
+            padding: 0;
+
+            div {
+                font-size: 18px;
+            }
         }
 
         .data {
             border-radius: 0 0 10px 10px;
+            padding: 5px 0;
         }
     }
 }
