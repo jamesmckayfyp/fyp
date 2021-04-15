@@ -33,49 +33,92 @@
             .pos {
                 padding-left: 10px;
             }
+
             .points {
                 padding-right: 10px;
             }
 
             // alignment
-            .pos, .team {
+            .pos,
+            .team {
                 align-items: flex-start;
             }
-            .games, .w, .d, .l, .gf, .ga, .gd, .points {
+
+            .games,
+            .w,
+            .d,
+            .l,
+            .gf,
+            .ga,
+            .gd,
+            .points {
                 align-items: flex-end;
             }
 
             // small mobile
             @media @mobile-s {
-                .team, .gf, .ga {
+
+                .team,
+                .gf,
+                .ga {
                     display: none
                 }
-                .pos, .games, .w, .d, .l, .gd, .points {
+
+                .pos,
+                .games,
+                .w,
+                .d,
+                .l,
+                .gd,
+                .points {
                     flex: 1 10.5%;
                 }
+
                 .short-team {
                     flex: 1 25%;
                 }
             }
 
             // standard
-            .team, .gf, .ga{
+            .team,
+            .gf,
+            .ga {
                 display: none
             }
-            .pos, .games, .w, .d, .l, .gd, .points {
+
+            .pos,
+            .games,
+            .w,
+            .d,
+            .l,
+            .gd,
+            .points {
                 flex: 1 8%;
             }
+
             .short-team {
                 flex: 1 20%;
             }
 
+            // mobile
             @media @mobile {
-                .short-team, .gf, .ga{
+
+                .short-team,
+                .gf,
+                .ga {
                     display: none
                 }
-                .pos, .games, .w, .d, .l, .gd, .points {
+
+                .pos,
+                .games,
+                .w,
+                .d,
+                .l,
+                .gd,
+                .points {
                     flex: 1 8%;
                 }
+
                 .team {
                     display: flex;
                     flex: 1 20%;
@@ -85,13 +128,26 @@
                 }
             }
 
+            // desktop
             @media @desktop {
-                .gf, .ga {
+
+                .gf,
+                .ga {
                     display: flex;
                 }
-                .pos, .games, .w, .d, .l, .gf, .ga, .gd, .points {
+
+                .pos,
+                .games,
+                .w,
+                .d,
+                .l,
+                .gf,
+                .ga,
+                .gd,
+                .points {
                     flex: 1 8%;
                 }
+
                 .team {
                     flex: 1 20%;
                 }

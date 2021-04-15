@@ -1,5 +1,5 @@
 export const lineChart = {
-    type: "bar",
+    type: "line",
     data: {
       labels: ["Rooney", "Ronaldo", "Berbatov"],
       datasets: [

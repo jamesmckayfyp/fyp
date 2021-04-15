@@ -14,6 +14,9 @@
 
         &__content {
             .component-content();
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
         }
     }
 }
@@ -28,4 +31,50 @@
 
 .league-combined {
     order: 7;
+}
+
+.player-stat {
+    background: @dark-primary-colour;
+    justify-content: space-between;
+    display: flex;
+    .rounded();
+
+    &--stat {
+        background: @accent-colour;
+        font-size: 20px;
+        font-weight: 600;
+        border-radius: 0px 10px 10px 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 20px;
+    }
+
+    &--content {
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        .rounded();
+
+        &__img {
+            width: 50px;
+            background: @light-primary-colour;
+            border: 2px solid @secondary-colour;
+            .circle();
+        }
+
+        &__player {
+            display: flex;
+            flex-direction: column;
+            font-size: 20px;
+            font-weight: 500;
+            padding-left: 15px;
+
+            span {
+                font-size: 16px;
+                font-weight: 300;
+                color: @dark-secondary-colour;
+            }
+        }
+    }
 }
