@@ -1,8 +1,8 @@
 <template>
     <div class="league-change">
-        <a class="league-change__cta active" :alt={btnNameOne} >{{btnNameOne}}</a>
-        <a class="league-change__cta" :alt={btnNameTwo}>{{btnNameTwo}}</a>
-        <a class="league-change__cta" :alt={btnNameThree}>{{btnNameThree}}</a>
+      <a class="league-change__cta active" alt="Overall">Overall</a>
+      <a class="league-change__cta" alt="Home">Home</a>
+      <a class="league-change__cta" alt="Away">Away</a>
     </div>
 </template>
 
@@ -10,7 +10,5 @@
 
 export default {
   name: 'LeagueTableChange',
-  props: ["btnNameOne", "btnNameTwo", "btnNameThree"]
-
 }
 </script>

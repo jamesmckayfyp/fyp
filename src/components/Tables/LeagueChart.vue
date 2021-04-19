@@ -4,7 +4,7 @@
             <div class="league-charts--block__head">{{leagueName}}</div>
             <div class="league-charts--block__content">
                 <div class="chart-container">
-                    <LineChart />
+                    <!-- <LineChart /> -->
                 </div>
             </div>
         </div>

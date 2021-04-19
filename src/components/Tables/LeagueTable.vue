@@ -78,18 +78,9 @@
 </template>
 
 <script>
-import leagueA from "../../json/leagueA.json"; 
 
 export default {
   name: "LeagueTable",
-  data() {
-    return {
-      leagueName: leagueA.competition.name,
-      leagueCountry: leagueA.competition.country,
-      leagueTable: leagueA.standings[0].table,
-      // leagueTableHome: leagueA.standings.table,
-      // leagueTableAway: leagueA.standings.table,
-    };
-  },
+  props : ['leagueTable'],
 };
 </script>
