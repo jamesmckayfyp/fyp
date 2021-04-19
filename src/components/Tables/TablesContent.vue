@@ -1,7 +1,23 @@
 <template>
   <div class="container">
-    <LeagueFilter leagueName="Premier League" leagueCountry="England" />
-    <LeagueTableChange btnNameOne="Overall" btnNameTwo="Home" btnNameThree="Away" />
+    <!-- <LeagueFilter leagueName="Premier League" leagueCountry="England" /> -->
+    <CustomSelect
+      :options="[
+        'Premier League',
+        'Serie A',
+        'La Liga',
+        'Bundesliga',
+        'Ligue 1',
+      ]"
+      :default="'Premier League'"
+      class="select"
+      @input="alert(displayToKey($event))"
+    />
+    <LeagueTableChange
+      btnNameOne="Overall"
+      btnNameTwo="Home"
+      btnNameThree="Away"
+    />
     <LeagueTable />
     <LeagueChartChange btnNameOne="Line" btnNameTwo="Bar" btnNameThree="Pie" />
     <LeagueChart leagueName="Premier League Charts" />
@@ -21,6 +37,8 @@ import LeagueCombined from "./LeagueCombined";
 import LeagueTableChange from "./LeagueTableChange";
 import LeagueChartChange from "./LeagueChartChange";
 
+import CustomSelect from "./CustomSelect";
+
 export default {
   name: "TablesContent",
   components: {
@@ -32,6 +50,7 @@ export default {
     LeagueCombined,
     LeagueTableChange,
     LeagueChartChange,
-  }
+    CustomSelect,
+  },
 };
 </script>

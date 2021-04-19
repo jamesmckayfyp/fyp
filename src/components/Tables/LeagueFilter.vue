@@ -13,9 +13,11 @@
 </template>
 
 <script>
+import CustomSelect from "./CustomSelect";
 
 export default {
    name: "LeagueFilter",
-   props : ["leagueName", "leagueCountry"]
+   props : ["leagueName", "leagueCountry"],
+   components : {CustomSelect}
 }
 </script>

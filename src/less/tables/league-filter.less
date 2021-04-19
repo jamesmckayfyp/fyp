@@ -1,64 +1,60 @@
-.league-filter {
-    background: @secondary-colour;
-    display: flex;
-    flex: 1 100%;
-    align-items: center;
-    justify-content: space-between;
-    .rounded();
-    .box-shadow();
+// DROPDOWN 
+.custom-select {
+    position: relative;
+    width: 100%;
+    text-align: left;
+    outline: none;
+    height: 50px;
+    line-height: 50px;
 
-    @media @mobile {
-        order: 0;
-    }
-
-    &--info, &--dropdown {
+    .selected {
+        background-color: @secondary-colour;
+        .rounded();
+        .box-shadow();
+        padding: 0 1em;
+        cursor: pointer;
+        user-select: none;
         display: flex;
-        align-items: center;
-        margin: 5px 15px;
-        height: 40px;
+        justify-content: space-between;
+        height: 50px;
+
+        color: @dark-primary-colour;
+        font-size: 18px;
+        font-weight: 600;
+        padding-left: 20px;
 
         @media @mobile {
-            height: 50px;
+            font-size: 24px;
         }
     }
 
-    &--info {
-        
-        &__img {
-            background: @dark-primary-colour;
-            width: 30px;
-            height: 30px;
-            .rounded();
-        }
+    .items {
+        color: @secondary-colour;
+        border-radius: 0px 0px 10px 10px;
+        overflow: hidden;
+        position: absolute;
+        background-color: @dark-primary-colour;
+        left: 0;
+        right: 0;
+        z-index: 1;
 
-        &__name {
-            color: @dark-primary-colour;
-            font-size: 18px;
-            font-weight: 600;
-            padding-left: 20px;
+        div {
+            color: @secondary-colour;
+            padding-left: 1em;
+            cursor: pointer;
+            user-select: none;
 
-            @media @mobile {
-                font-size: 24px;
-            }
-        }
-
-        &__country {
-            display: none;
-
-            @media @mobile {
-                display: flex;
-                color: @primary-colour;
-                font-size: 20px;
-                font-weight: 300;
-                padding-left: 20px;
+            &:hover {
+                background-color: @dark-accent-colour;
             }
         }
     }
 
-    &--dropdown {
-        justify-content: flex-end;
-  
-        &__cta {
+    .change-league {
+        display: flex;
+        align-items: center;
+
+        &__text {
             display: none;
 
             @media @mobile {
@@ -77,4 +73,12 @@
             background-image: url(../../assets/down-arrow.svg);
         }
     }
+}
+
+.custom-select .selected.open {
+    border-radius: 10px 10px 0px 0px;
+}
+
+.selectHide {
+    display: none;
 }
