@@ -1,14 +1,10 @@
 <template>
   <div id="league-B">
-    <LeagueTableChange
-      btnNameOne="Overall"
-      btnNameTwo="Home"
-      btnNameThree="Away"
-    />
+    <LeagueTableChange/>
 
     <LeagueTable :leagueTable="leagueTable" />
 
-    <LeagueChartChange btnNameOne="Line" btnNameTwo="Bar" btnNameThree="Pie" />
+    <LeagueChartChange />
 
     <LeagueChart :leagueName="leagueName" />
 

@@ -1,6 +1,5 @@
 <script>
 import { Bar } from "vue-chartjs";
-import leagueA from "../../json/leagueA.json";
 
 export default {
   name: "LineChart",

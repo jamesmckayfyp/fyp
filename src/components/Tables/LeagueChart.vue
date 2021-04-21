@@ -1,10 +1,11 @@
 <template>
     <div class="league-charts">
         <div class="league-charts--block">
-            <div class="league-charts--block__head">{{leagueName}}</div>
+            <div class="league-charts--block__head">{{leagueName}} Points</div>
             <div class="league-charts--block__content">
                 <div class="chart-container">
-                    <!-- <LineChart /> -->
+                    <LineChartA />
+                    <!-- <LineChartB /> -->
                 </div>
             </div>
         </div>
@@ -12,15 +13,16 @@
 </template>
 
 <script>
-import LineChart from "./LineChart"
+import LineChartA from "./LineChartA"
+import LineChartB from "./LineChartB"
 
 export default {
   name: 'LeagueChart',
   props : ["leagueName"],
   components : {
-      LineChart
+      LineChartA,
+      LineChartB
     }
-
 }
 </script>
 

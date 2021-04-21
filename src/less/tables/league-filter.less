@@ -1,84 +1,29 @@
-// DROPDOWN 
-.custom-select {
-    position: relative;
+.league-select {
     width: 100%;
-    text-align: left;
-    outline: none;
     height: 50px;
-    line-height: 50px;
+    padding-left: 15px;
 
-    .selected {
-        background-color: @secondary-colour;
-        .rounded();
-        .box-shadow();
-        padding: 0 1em;
-        cursor: pointer;
-        user-select: none;
-        display: flex;
-        justify-content: space-between;
-        height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-        color: @dark-primary-colour;
-        font-size: 18px;
-        font-weight: 600;
-        padding-left: 20px;
+    font-family: @font-main;
+    font-size: 20px;
+    font-weight: 600;
+    color: @dark-primary-colour;
 
-        @media @mobile {
-            font-size: 24px;
-        }
+    appearance: none;
+    border: none;
+    .box-shadow();
+    .rounded();
+
+    background: url(../../assets/down-arrow.svg);
+    background-color: @secondary-colour;
+    background-size: 25px;
+    background-position: 98% 50%;
+    background-repeat: no-repeat;
+
+    @media @mobile {
+        background-position: 99% 50%;
     }
-
-    .items {
-        color: @secondary-colour;
-        border-radius: 0px 0px 10px 10px;
-        overflow: hidden;
-        position: absolute;
-        background-color: @dark-primary-colour;
-        left: 0;
-        right: 0;
-        z-index: 1;
-
-        div {
-            color: @secondary-colour;
-            padding-left: 1em;
-            cursor: pointer;
-            user-select: none;
-
-            &:hover {
-                background-color: @dark-accent-colour;
-            }
-        }
-    }
-
-    .change-league {
-        display: flex;
-        align-items: center;
-
-        &__text {
-            display: none;
-
-            @media @mobile {
-                display: flex;
-                color: @light-primary-colour;
-                font-size: 20px;
-                font-weight: 500;
-                text-transform: uppercase;
-                padding-right: 20px;
-            }
-        }
-
-        .icon-down-arrow {
-            width: 25px;
-            height: 25px;
-            background-image: url(../../assets/down-arrow.svg);
-        }
-    }
-}
-
-.custom-select .selected.open {
-    border-radius: 10px 10px 0px 0px;
-}
-
-.selectHide {
-    display: none;
 }

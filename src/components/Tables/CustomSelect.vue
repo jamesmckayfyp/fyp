@@ -2,10 +2,10 @@
   <div class="custom-select" :tabindex="tabindex" @blur="open = false">
     <div class="selected" :class="{ open: open }" @click="open = !open">
       {{ selected }}
-    <div class="change-league">
+      <div class="change-league">
         <div class="change-league__text">Change League</div>
         <span class="icon icon-down-arrow"></span>
-    </div>
+      </div>
     </div>
     <div class="items" :class="{ selectHide: !open }">
       <div
