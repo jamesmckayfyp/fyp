@@ -1,9 +1,12 @@
 .league-table {
+    display: flex;
+    flex-direction: column;
     flex: 1 100%;
+    gap: 20px;
 
     @media @mobile {
         flex: 1 45%;
-        order: 3;
+        gap: 30px;
     }
 
     .league-table-block {

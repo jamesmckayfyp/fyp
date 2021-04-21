@@ -1,7 +1,6 @@
 <template>
   <div class="league-table">
-
-    
+    <LeagueTableChange />
     <div class="league-table-block">
       <div class="league-table-block--row head">
         <div class="league-table-block--row__column pos">#</div>
@@ -80,9 +79,11 @@
 </template>
 
 <script>
+import LeagueTableChange from "./LeagueTableChange";
 
 export default {
   name: "LeagueTable",
   props : ['leagueTable'],
+  components: {LeagueTableChange}
 };
 </script>

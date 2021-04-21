@@ -14,24 +14,67 @@
         {{ option.name }}
       </option>
     </select>
-    <component :is="selected"></component>
+    <LeagueTable :leagueTable="table" />
+    <LeagueChart :leagueName="name" />
+    <LeagueScorers
+      heading="Top Scorers"
+      :leagueScorers="scorers"
+    />
+    <LeagueAssists
+      heading="Most Assists"
+      :leagueAssists="assists"
+    />
+    <LeagueCombined
+      heading="Most Goals & Assists"
+      :leagueCombined="combined"
+    />
   </div>
 </template>
 
 <script>
-import LeagueA from "./LeagueA";
-import LeagueB from "./LeagueB";
+// components
+import LeagueTable from "./LeagueTable";
+import LeagueChart from "./LeagueChart";
+import LeagueScorers from "./LeagueScorers";
+import LeagueAssists from "./LeagueAssists";
+import LeagueCombined from "./LeagueCombined";
+
+// json data
+import leagueA from "../../json/leagueA.json";
+import leagueB from "../../json/leagueB.json";
 
 export default {
   name: "TablesContent",
-  components: { LeagueA, LeagueB },
+  components: {
+    LeagueTable,
+    LeagueChart,
+    LeagueScorers,
+    LeagueAssists,
+    LeagueCombined,
+  },
   data() {
     return {
-      selected: "LeagueA",
+      selected: "leagueA",
+
       options: [
-        { name: "Premier League", value: "LeagueA" },
-        { name: "Serie A", value: "LeagueB" },
-      ],
+        {
+          value: "leagueA",
+          name: leagueA.competition.name,
+          table: leagueA.standings[0].table,
+          scorers: leagueA.stats[0].table,
+          assists: leagueA.stats[1].table,
+          combined: leagueA.stats[2].table,
+        },
+        {
+          value: "leagueB",
+          name: leagueB.competition.name,
+          table: leagueB.standings[0].table,
+          scorers: leagueB.stats[0].table,
+          assists: leagueB.stats[1].table,
+          combined: leagueB.stats[2].table,
+        },
+      ]
+
     };
   },
   methods: {
