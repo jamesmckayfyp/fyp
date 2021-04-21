@@ -1,6 +1,10 @@
 <template>
   <div class="container">
-    <select v-model="selected" @change="changeLeague($event)" class="league-select">
+    <select
+      v-model="selected"
+      @change="changeLeague($event)"
+      class="league-select"
+    >
       <option
         v-for="option in options"
         :value="option.value"

@@ -1,5 +1,7 @@
 <template>
   <div class="league-table">
+
+    
     <div class="league-table-block">
       <div class="league-table-block--row head">
         <div class="league-table-block--row__column pos">#</div>
