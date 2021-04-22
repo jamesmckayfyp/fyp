@@ -14,19 +14,21 @@
         {{ option.name }}
       </option>
     </select>
-    <LeagueTable :leagueTable="table" />
-    <LeagueChart :leagueName="name" />
+
+    <LeagueTable :selectedTable="table"/>
+
+    <LeagueChart />
     <LeagueScorers
       heading="Top Scorers"
-      :leagueScorers="scorers"
+      :selectedScorers="scorers"
     />
     <LeagueAssists
       heading="Most Assists"
-      :leagueAssists="assists"
+      :selectedAssists="assists"
     />
     <LeagueCombined
       heading="Most Goals & Assists"
-      :leagueCombined="combined"
+      :selectedCombined="combined"
     />
   </div>
 </template>
@@ -55,6 +57,12 @@ export default {
   data() {
     return {
       selected: "leagueA",
+      name: leagueA.competition.name,
+      table: leagueA.standings[0].table,
+      scorers: leagueA.stats[0].table,
+      assists: leagueA.stats[1].table,
+      combined: leagueA.stats[2].table,
+     
 
       options: [
         {
@@ -80,7 +88,7 @@ export default {
   methods: {
     changeLeague(event) {
       this.selected = option.value;
-    },
-  },
+    }
+  }
 };
 </script>

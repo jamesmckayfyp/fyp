@@ -2,7 +2,7 @@
     <div class="league-charts">
         <LeagueChartChange />
         <div class="league-charts--block">
-            <div class="league-charts--block__head">{{leagueName}} Points</div>
+            <div class="league-charts--block__head">Table Points</div>
             <div class="league-charts--block__content">
                 <div class="chart-container">
                     <!-- <LineChartA /> -->
@@ -14,14 +14,13 @@
 </template>
 
 <script>
-import LeagueChartChange from "./LeagueTableChange";
+import LeagueChartChange from "./LeagueChartChange";
 
 import LineChartA from "./LineChartA"
 import LineChartB from "./LineChartB"
 
 export default {
   name: 'LeagueChart',
-  props : ["leagueName"],
   components : {
       LeagueChartChange,
       LineChartA,
