@@ -47,6 +47,16 @@ body {
 
 }
 
+#home {
+    .container {
+        flex-direction: column;
+
+        @media @mobile {
+            flex-direction: row;
+        }
+    }
+}
+
 // GLOBAL UL STYLES
 ul {
     list-style: none;
