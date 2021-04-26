@@ -1,13 +1,21 @@
 <template>
   <div class="container">
-    Games
+    <component :is="component" />
   </div>
 </template>
 
 <script>
+import GamesLive from "./GamesLive";
+import GamesPrevious from "./GamesPrevious";
+import GamesUpcoming from "./GamesUpcoming";
+
 export default {
   name: "GamesContent",
-  components: {
+  components: { GamesLive, GamesPrevious, GamesUpcoming },
+  data() {
+    return {
+      component: "GamesLive",
+    };
   },
 };
 </script>
