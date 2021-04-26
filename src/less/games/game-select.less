@@ -1,0 +1,92 @@
+.game-select {
+    display: flex;
+    width: 100%;
+    height: 50px;
+    align-items: center;
+    background: @primary-colour;
+    .rounded();
+    .box-shadow();
+
+    &--tab {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+
+        height: 100%;
+
+        background: @primary-colour;
+        color: @secondary-colour;
+        font-size: 20px;
+        font-weight: 600;
+
+        &:hover {
+            background: @dark-primary-colour;
+            transition: 0.5s;
+        }
+
+        .icon-left-arrow, .icon-right-arrow {
+            width: 10px;
+            height: 11px;
+
+            @media @mobile {
+                width: 15px;
+                height: 17px;
+            }
+            
+            @media @mobile-s {
+                display: none;
+            }
+        }
+
+        .icon-live {
+            width: 11px;
+            height: 11px;
+
+            @media @mobile {
+                width: 15px;
+                height: 15px;
+            }
+            
+            @media @mobile-s {
+                display: none;
+            }
+        }
+
+        .icon-left-arrow {
+            background-image: url(../../assets/left-arrow.svg);
+            // &:hover,
+            // &:active {
+            //     background-image: url(../../assets/left-arrow-hover.svg);
+            // }
+        }
+        .icon-right-arrow {
+            background-image: url(../../assets/right-arrow.svg);
+            // &:hover,
+            // &:active {
+            //     background-image: url(../../assets/right-arrow-hover.svg);
+            // }
+        }
+        .icon-live {
+            background-image: url(../../assets/live.svg);
+            // &:hover,
+            // &:active {
+            //     background-image: url(../../assets/live-hover.svg);
+            // }
+        }
+    }
+
+    .left {
+        border-radius: 10px 0 0 10px;
+    }
+
+    .right {
+        border-radius: 0 10px 10px 0;
+    }
+
+    .active {
+        background: @secondary-colour;
+        color: @primary-colour;
+    }
+}
