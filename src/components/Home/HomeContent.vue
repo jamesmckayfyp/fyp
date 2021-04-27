@@ -1,7 +1,8 @@
 <template>
   <div class="container">
-      <Welcome />
-      <LiveScores />
+    <Welcome />
+    <LiveScores />
+</div>
   </div>
 </template>
 
@@ -15,5 +16,13 @@ export default {
     Welcome,
     LiveScores,
   },
+  data() {
+    return {
+      
+    }
+  },
+  methods: {
+    
+  }
 };
 </script>

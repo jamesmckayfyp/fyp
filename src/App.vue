@@ -7,6 +7,8 @@
 </template>
 
 <script>
+import fetchAPI from "./js/mixins/fetchAPI";
+
 import Header from "./components/Main/Header";
 import Footer from "./components/Main/Footer";
 
