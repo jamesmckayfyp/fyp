@@ -1,16 +1,30 @@
 <template>
   <div class="container">
-    <!-- <Lineup /> -->
-    Match Info
+    <MatchScore
+      homeTeam="Man United"
+      awayTeam="Roma"
+      homeScore="3"
+      awayScore="2"
+      homeScorers="Player (30', 42'), Player (72')"
+      awayScorers="Player (53', 62')"
+      time="88'"
+    />
+    <!-- <MatchInfo />
+    <MatchSquad />
+    <MatchStats />
+    <MatchOthers /> -->
   </div>
 </template>
 
 <script>
-import Lineup from "./Lineup";
+import MatchScore from "./MatchScore";
+import MatchInfo from "./MatchInfo";
+import MatchSquad from "./MatchSquad";
+import MatchStats from "./MatchStats";
+import MatchOthers from "./MatchOthers";
 
 export default {
   name: "Match",
-  components: { Lineup },
-  props: ["homeTeamMatch", "awayTeam", "homeScore", "awayScore", "time"]
+  components: { MatchScore, MatchInfo, MatchSquad, MatchStats, MatchOthers },
 };
 </script>
