@@ -9,10 +9,10 @@
       awayScorers="Player (53', 62')"
       time="88'"
     />
-    <!-- <MatchInfo />
-    <MatchSquad />
-    <MatchStats />
-    <MatchOthers /> -->
+    <MatchInfo competition="Europa League" type="Semi-Finals" />
+    <MatchSquad homeTeam="Man United" awayTeam="Roma" />
+    <!-- <MatchStats /> -->
+    <!-- <MatchOthers /> -->
   </div>
 </template>
 

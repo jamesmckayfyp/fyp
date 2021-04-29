@@ -1,0 +1,104 @@
+.match-squad {
+    flex: 1 100%;
+
+    @media @mobile {
+        flex: 0 50%;
+    }
+
+    &--block {
+        .component-block();
+
+        &__head {
+            .component-head();
+        }
+
+        &__content {
+            
+            &--tabs {
+                display: flex;
+                height: 40px;
+
+                &__tab {
+                    flex: 1;
+                    .flex-center();
+                    background: @dark-primary-colour;
+                }
+
+                .active {
+                    background: @primary-colour;
+                }
+            }
+        }
+    }
+}
+
+.line-up {
+    flex: 1 100%;
+    display: flex;
+    padding: 15px;
+    flex-direction: column;
+
+    &--pitch {
+        padding: 10px;
+        background: @accent-colour;
+        .rounded();
+        display: flex;
+        flex-direction: column-reverse;
+        position: relative;
+
+        &__formation {
+            position: absolute;
+            top: 0;
+            left: 0;
+            border-radius: 10px 0;
+            padding: 10px;
+            background: @dark-accent-colour;
+        }
+
+        &__position {
+            display: flex;
+            align-items: center;
+            min-height: 70px;
+
+            &--player {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 5px;
+                flex: 1;
+
+                &__icon {
+                    background: @secondary-colour;
+                    width: 20px;
+                    height: 20px;
+                    .circle();
+                    border: 3px solid @dark-accent-colour;
+                }
+
+                &__name {
+                    font-size: 12px;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+            }
+        }
+    }
+
+    &--subs {
+        padding: 10px;
+        background: @dark-accent-colour;
+        border-radius: 0 0 10px 10px;
+
+        &__head {
+
+        }
+
+        &__players {
+
+            &--player {
+
+            }
+        }
+    }
+}
