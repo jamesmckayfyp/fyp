@@ -10,8 +10,9 @@
       time="88'"
     />
     <MatchInfo competition="Europa League" type="Semi-Finals" />
+    <MatchStats homeTeam="Man United" awayTeam="Roma" />
     <MatchSquad homeTeam="Man United" awayTeam="Roma" />
-    <!-- <MatchStats /> -->
+    
     <!-- <MatchOthers /> -->
   </div>
 </template>
