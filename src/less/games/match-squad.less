@@ -41,10 +41,11 @@
     &--pitch {
         padding: 10px;
         background: @accent-colour;
-        .rounded();
+        border-radius: 10px 10px 0 0;
         display: flex;
         flex-direction: column-reverse;
         position: relative;
+        border-bottom: 2px solid @secondary-colour;
 
         &__formation {
             position: absolute;
@@ -52,7 +53,11 @@
             left: 0;
             border-radius: 10px 0;
             padding: 10px;
-            background: @dark-accent-colour;
+            background: @dark-accent-colour;    
+            font-weight: 500;
+            font-size: 18px;
+            border-right: solid 2px @secondary-colour;
+            border-bottom: solid 2px @secondary-colour;
         }
 
         &__position {
@@ -67,12 +72,34 @@
                 gap: 5px;
                 flex: 1;
 
-                &__icon {
+                &__number {
                     background: @secondary-colour;
                     width: 20px;
                     height: 20px;
                     .circle();
                     border: 3px solid @dark-accent-colour;
+                    color: @dark-accent-colour;
+                    font-size: 12px;
+                    .flex-center();
+                    font-weight: 600;
+                    position: relative;
+                }
+
+                .captain {
+                    &::after {
+                        content: "C";
+                        position: absolute;
+                        top: -8px;
+                        right: -8px;
+                        font-size: 10px;
+                        background: @primary-colour;
+                        width: 15px;
+                        height: 15px;
+                        .circle();
+                        color: @secondary-colour;
+                        .flex-center();
+                        font-weight: 600;
+                    }
                 }
 
                 &__name {
@@ -89,16 +116,48 @@
         padding: 10px;
         background: @dark-accent-colour;
         border-radius: 0 0 10px 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
 
-        &__head {
+        &-left, &-right {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
 
-        }
-
-        &__players {
-
-            &--player {
-
+            &__head {
+                font-weight: 600;
+                font-size: 18px;
+            }
+    
+            &__players {
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+    
+                &--player {
+                    display: flex;
+                    gap: 5px;
+                    align-items: center;
+    
+                    &__number {
+                        background: @secondary-colour;
+                        width: 20px;
+                        height: 20px;
+                        border-radius: 50px;
+                        border: 3px solid @accent-colour;
+                        color: @dark-accent-colour;
+                        font-size: 12px;
+                        .flex-center();
+                        font-weight: 600;
+                    }
+    
+                    &__name {
+                        font-size: 14px;
+                    }
+                }
             }
         }
+        
     }
 }
