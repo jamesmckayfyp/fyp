@@ -1,0 +1,38 @@
+.player-header {
+    width: 100%;
+    background: @secondary-colour;
+    height: 50px;
+    .box-shadow();
+    .rounded();
+
+    &--content {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        gap: 25px;
+        padding: 0 15px;
+
+        &__img {
+            width: 40px;
+            height: 40px;
+        }
+
+        &__info {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+
+            &--club, &--nation {
+                color: @light-primary-colour;
+                font-size: 16px;
+                font-weight: 500;
+            }
+
+            &--name {
+                color: @primary-colour;
+                font-size: 22px;
+                font-weight: 600;
+            }
+        }
+    }
+}
