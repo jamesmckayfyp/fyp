@@ -1,0 +1,63 @@
+.my-team-header {
+    width: 100%;
+    background: @secondary-colour;
+    height: 70px;
+    .box-shadow();
+    .rounded();
+
+    &--content {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        gap: 25px;
+        padding: 0 15px;
+
+        &__img {
+            width: 42px;
+            height: 42px;
+        }
+
+        &__info {
+            display: flex;
+            flex-direction: column;
+            white-space: nowrap;
+            overflow: hidden;
+
+            &--club,
+            &--nation {
+                color: @light-primary-colour;
+                font-size: 16px;
+                font-weight: 500;
+            }
+
+            &--name {
+                color: @primary-colour;
+                font-size: 22px;
+                font-weight: 600;
+            }
+        }
+    }
+}
+
+@media @mobile {
+    .my-team-header {
+
+        &--content {
+
+            &__info {
+                flex-direction: row;
+                align-items: center;
+                gap: 25px;
+
+                &--club,
+                &--nation {
+                    font-size: 20px;
+                }
+
+                &--name {
+                    font-size: 26px;
+                }
+            }
+        }
+    }
+}

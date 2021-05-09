@@ -1,0 +1,23 @@
+.my-team-games {
+    flex: 1 100%;
+
+    @media @mobile {
+        flex: 1 48%;
+    }
+
+    &--block {
+        .component-block();
+
+        &__head {
+            .component-head();
+        }
+
+        &__content {
+            padding: 15px;
+            display: flex;
+            flex-wrap: wrap;
+
+        
+        }
+    }
+}
