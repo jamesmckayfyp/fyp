@@ -1,0 +1,297 @@
+{
+    "get": "standings",
+    "parameters": {
+        "league": "40",
+        "season": "2020"
+    },
+    "errors": [],
+    "results": 1,
+    "paging": {
+        "current": 1,
+        "total": 1
+    },
+    "response": [{
+            "league": {
+                "id": 40,
+                "name": "Championship",
+                "country": "England",
+                "logo": "https://media.api-sports.io/football/leagues/40.png",
+                "flag": "https://media.api-sports.io/flags/gb.svg",
+                "season": 2020,
+                "standings": [
+                    [{
+                            "rank": 1,
+                            "team": {
+                                "id": 71,
+                                "name": "Norwich",
+                                "logo": "https://media.api-sports.io/football/teams/71.png"
+                            },
+                            "points": 97,
+                            "goalsDiff": 39,
+                            "group": "Championship",
+                            "form": "DWWLL",
+                            "status": "same",
+                            "description": "Promotion - Premier League",
+                            "all": {
+                                "played": 46,
+                                "win": 29,
+                                "draw": 10,
+                                "lose": 7,
+                                "goals": {
+                                    "for": 75,
+                                    "against": 36
+                                }
+                            },
+                            "home": {
+                                "played": 23,
+                                "win": 14,
+                                "draw": 6,
+                                "lose": 3,
+                                "goals": {
+                                    "for": 39,
+                                    "against": 15
+                                }
+                            },
+                            "away": {
+                                "played": 23,
+                                "win": 15,
+                                "draw": 4,
+                                "lose": 4,
+                                "goals": {
+                                    "for": 36,
+                                    "against": 21
+                                }
+                            },
+                            "update": "2021-05-08T00:00:00+00:00"
+                        },
+                        {
+                            "rank": 2,
+                            "team": {
+                                "id": 38,
+                                "name": "Watford",
+                                "logo": "https://media.api-sports.io/football/teams/38.png"
+                            },
+                            "points": 91,
+                            "goalsDiff": 33,
+                            "group": "Championship",
+                            "form": "WLWWL",
+                            "status": "same",
+                            "description": "Promotion - Premier League",
+                            "all": {
+                                "played": 46,
+                                "win": 27,
+                                "draw": 10,
+                                "lose": 9,
+                                "goals": {
+                                    "for": 63,
+                                    "against": 30
+                                }
+                            },
+                            "home": {
+                                "played": 23,
+                                "win": 19,
+                                "draw": 2,
+                                "lose": 2,
+                                "goals": {
+                                    "for": 44,
+                                    "against": 12
+                                }
+                            },
+                            "away": {
+                                "played": 23,
+                                "win": 8,
+                                "draw": 8,
+                                "lose": 7,
+                                "goals": {
+                                    "for": 19,
+                                    "against": 18
+                                }
+                            },
+                            "update": "2021-05-08T00:00:00+00:00"
+                        },
+                        {
+                            "rank": 3,
+                            "team": {
+                                "id": 55,
+                                "name": "Brentford",
+                                "logo": "https://media.api-sports.io/football/teams/55.png"
+                            },
+                            "points": 87,
+                            "goalsDiff": 37,
+                            "group": "Championship",
+                            "form": "WWWWD",
+                            "status": "same",
+                            "description": "Promotion - Championship (Play Offs)",
+                            "all": {
+                                "played": 46,
+                                "win": 24,
+                                "draw": 15,
+                                "lose": 7,
+                                "goals": {
+                                    "for": 79,
+                                    "against": 42
+                                }
+                            },
+                            "home": {
+                                "played": 23,
+                                "win": 12,
+                                "draw": 9,
+                                "lose": 2,
+                                "goals": {
+                                    "for": 39,
+                                    "against": 20
+                                }
+                            },
+                            "away": {
+                                "played": 23,
+                                "win": 12,
+                                "draw": 6,
+                                "lose": 5,
+                                "goals": {
+                                    "for": 40,
+                                    "against": 22
+                                }
+                            },
+                            "update": "2021-05-08T00:00:00+00:00"
+                        },
+                        {
+                            "rank": 4,
+                            "team": {
+                                "id": 76,
+                                "name": "Swansea",
+                                "logo": "https://media.api-sports.io/football/teams/76.png"
+                            },
+                            "points": 80,
+                            "goalsDiff": 17,
+                            "group": "Championship",
+                            "form": "LWDLD",
+                            "status": "same",
+                            "description": "Promotion - Championship (Play Offs)",
+                            "all": {
+                                "played": 46,
+                                "win": 23,
+                                "draw": 11,
+                                "lose": 12,
+                                "goals": {
+                                    "for": 56,
+                                    "against": 39
+                                }
+                            },
+                            "home": {
+                                "played": 23,
+                                "win": 12,
+                                "draw": 6,
+                                "lose": 5,
+                                "goals": {
+                                    "for": 27,
+                                    "against": 16
+                                }
+                            },
+                            "away": {
+                                "played": 23,
+                                "win": 11,
+                                "draw": 5,
+                                "lose": 7,
+                                "goals": {
+                                    "for": 29,
+                                    "against": 23
+                                }
+                            },
+                            "update": "2021-05-08T00:00:00+00:00"
+                        },
+                        {
+                            "rank": 5,
+                            "team": {
+                                "id": 747,
+                                "name": "Barnsley",
+                                "logo": "https://media.api-sports.io/football/teams/747.png"
+                            },
+                            "points": 78,
+                            "goalsDiff": 8,
+                            "group": "Championship",
+                            "form": "DLWWL",
+                            "status": "same",
+                            "description": "Promotion - Championship (Play Offs)",
+                            "all": {
+                                "played": 46,
+                                "win": 23,
+                                "draw": 9,
+                                "lose": 14,
+                                "goals": {
+                                    "for": 58,
+                                    "against": 50
+                                }
+                            },
+                            "home": {
+                                "played": 23,
+                                "win": 12,
+                                "draw": 6,
+                                "lose": 5,
+                                "goals": {
+                                    "for": 30,
+                                    "against": 22
+                                }
+                            },
+                            "away": {
+                                "played": 23,
+                                "win": 11,
+                                "draw": 3,
+                                "lose": 9,
+                                "goals": {
+                                    "for": 28,
+                                    "against": 28
+                                }
+                            },
+                            "update": "2021-05-08T00:00:00+00:00"
+                        },
+                        {
+                            "rank": 6,
+                            "team": {
+                                "id": 35,
+                                "name": "Bournemouth",
+                                "logo": "https://media.api-sports.io/football/teams/35.png"
+                            },
+                            "points": 77,
+                            "goalsDiff": 27,
+                            "group": "Championship",
+                            "form": "LLLWW",
+                            "status": "same",
+                            "description": "Promotion - Championship (Play Offs)",
+                            "all": {
+                                "played": 46,
+                                "win": 22,
+                                "draw": 11,
+                                "lose": 13,
+                                "goals": {
+                                    "for": 73,
+                                    "against": 46
+                                }
+                            },
+                            "home": {
+                                "played": 23,
+                                "win": 13,
+                                "draw": 3,
+                                "lose": 7,
+                                "goals": {
+                                    "for": 40,
+                                    "against": 24
+                                }
+                            },
+                            "away": {
+                                "played": 23,
+                                "win": 9,
+                                "draw": 8,
+                                "lose": 6,
+                                "goals": {
+                                    "for": 33,
+                                    "against": 22
+                                }
+                            },
+                            "update": "2021-05-08T00:00:00+00:00"
+                        }
+                    ]
+                ]
+            }
+        }
+    ]
+}

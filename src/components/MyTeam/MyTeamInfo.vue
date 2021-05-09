@@ -19,6 +19,14 @@
           <div class="label">Nickname</div>
           <div class="stat">{{clubNickname}}</div>
         </div>
+        <div class="my-team-info--block__content--info">
+          <div class="label">Manager</div>
+          <div class="stat">{{clubManager}}</div>
+        </div>
+        <div class="my-team-info--block__content--info">
+          <div class="label">Captain</div>
+          <div class="stat">{{clubCaptain}}</div>
+        </div>
       </div>
     </div>
   </div>
@@ -33,6 +41,8 @@ export default {
       clubPosition: "2nd",
       clubStadium: "Old Trafford",
       clubNickname: "Red Devils",
+      clubManager: "Solskjær",
+      clubCaptain: "Maguire",
     };
   },
 };

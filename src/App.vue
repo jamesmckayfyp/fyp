@@ -7,6 +7,8 @@
 </template>
 
 <script>
+// import fetch from "./js/fetchAPI";
+
 import Header from "./components/Main/Header";
 import Footer from "./components/Main/Footer";
 
@@ -15,6 +17,7 @@ export default {
   components: {
     Header,
     Footer,
+    // fetch
   },
 };
 </script>
