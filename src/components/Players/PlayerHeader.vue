@@ -9,9 +9,8 @@
       <div class="player-header--content__info">
         <div class="player-header--content__info--name">{{ playerName }}</div>
         <div class="player-header--content__info--club">
-          {{ playerClub }}  {{ playerNation }}
+          {{ playerClub }} / {{ playerNation }}
         </div>
-        <!-- <div class="player-header--content__info--nation"></div> -->
       </div>
     </div>
   </div>
@@ -23,7 +22,7 @@ export default {
   data() {
     return {
       playerName: "Bruno Fernandes",
-      playerClub: "Man United",
+      playerClub: "Manchester United",
       playerNation: "Portugal",
     };
   },

@@ -1,0 +1,111 @@
+.player-stats {
+    flex: 1 100%;
+
+    .player-stats-block {
+        .component-block();
+
+        &--row {
+            .comp {
+                flex: 0 35%;
+                display: flex;
+                flex-direction: column;
+
+                div {
+                    white-space: nowrap;
+                    overflow: hidden;
+                }
+            }
+
+            .g,
+            .a,
+            .cs,
+            .motm {
+                flex: 0 16.25%;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+            }
+
+        }
+
+        .head {
+            .component-head();
+        }
+
+        .data {
+            display: flex;
+            padding: 10px 15px;
+        }
+
+        .total {
+            .component-head();
+            background: @dark-primary-colour;
+            color: @secondary-colour;
+            border-radius: 0 0 10px 10px;
+        }
+
+        .desktop {
+            display: none;
+
+            @media @mobile {
+                display: flex;
+            }
+        }
+
+        .mobile {
+            @media @mobile {
+                display: none;
+            }
+        }
+    }
+}
+
+@media @mobile-s {
+    .player-stats {
+
+        .player-stats-block {
+
+            &--row {
+
+                .comp,
+                .motm {
+                    flex: 0 25%;
+                }
+
+                .g,
+                .a,
+                .c {
+                    flex: 0 16.6%;
+                }
+            }
+        }
+    }
+}
+
+@media @mobile {
+    .player-stats {
+    
+        .player-stats-block {
+    
+            &--row {
+                .comp {
+                    flex: 0 25%;
+                    align-items: center;
+                }
+    
+                .g,
+                .a,
+                .cs {
+                    align-items: center;
+                    flex: 0 18.75%;
+                }
+
+                .motm {
+                    align-items: center;
+                    flex: 0 18.75%;
+                }
+    
+            }
+        }
+    }
+}

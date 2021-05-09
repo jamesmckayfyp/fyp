@@ -1,7 +1,7 @@
 .player-header {
     width: 100%;
     background: @secondary-colour;
-    height: 50px;
+    height: 70px;
     .box-shadow();
     .rounded();
 
@@ -13,16 +13,18 @@
         padding: 0 15px;
 
         &__img {
-            width: 40px;
-            height: 40px;
+            width: 42px;
+            height: 42px;
         }
 
         &__info {
             display: flex;
             flex-direction: column;
-            gap: 15px;
+            white-space: nowrap;
+            overflow: hidden;
 
-            &--club, &--nation {
+            &--club,
+            &--nation {
                 color: @light-primary-colour;
                 font-size: 16px;
                 font-weight: 500;
@@ -32,6 +34,29 @@
                 color: @primary-colour;
                 font-size: 22px;
                 font-weight: 600;
+            }
+        }
+    }
+}
+
+@media @mobile {
+    .player-header {
+
+        &--content {
+
+            &__info {
+                flex-direction: row;
+                align-items: center;
+                gap: 25px;
+
+                &--club,
+                &--nation {
+                    font-size: 20px;
+                }
+
+                &--name {
+                    font-size: 26px;
+                }
             }
         }
     }
