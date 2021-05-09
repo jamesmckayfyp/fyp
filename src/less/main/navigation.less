@@ -11,54 +11,75 @@
         .flex-even();
         width: 100%;
 
-        a {
-            color: @nav-text-colour;
-            font-size: 18px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            gap: 5px;
+        li {
+            flex: 1;
 
-            &:hover,
-            &:active {
-                color: @accent-colour;
-                transition: 0.5s;
-            }
-
-            .icon-games, .icon-tables, .icon-players {
-                width: 40px;
-                height: 27px;
+            a {
+                color: @nav-text-colour;
+                font-size: 18px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 5px;
 
                 &:hover,
                 &:active {
+                    color: @accent-colour;
                     transition: 0.5s;
                 }
 
-                @media @mobile {
-                    display: none;
-                }
-            }
+                .icon-games,
+                .icon-tables,
+                .icon-players,
+                .icon-my-team {
+                    width: 40px;
+                    height: 27px;
 
-            .icon-games {
-                background-image: url(../../assets/games.svg);
-                &:hover,
-                &:active {
-                    background-image: url(../../assets/games-hover.svg);
+                    &:hover,
+                    &:active {
+                        transition: 0.5s;
+                    }
+
+                    @media @mobile {
+                        display: none;
+                    }
                 }
-            }
-            .icon-tables {
-                background-image: url(../../assets/tables.svg);
-                &:hover,
-                &:active {
-                    background-image: url(../../assets/tables-hover.svg);
+
+                .icon-games {
+                    background-image: url(../../assets/games.svg);
+
+                    &:hover,
+                    &:active {
+                        background-image: url(../../assets/games-hover.svg);
+                    }
                 }
-            }
-            .icon-players {
-                background-image: url(../../assets/players.svg);
-                &:hover,
-                &:active {
-                    background-image: url(../../assets/players-hover.svg);
+
+                .icon-tables {
+                    background-image: url(../../assets/tables.svg);
+
+                    &:hover,
+                    &:active {
+                        background-image: url(../../assets/tables-hover.svg);
+                    }
+                }
+
+                .icon-players {
+                    background-image: url(../../assets/players.svg);
+
+                    &:hover,
+                    &:active {
+                        background-image: url(../../assets/players-hover.svg);
+                    }
+                }
+
+                .icon-my-team {
+                    background-image: url(../../assets/myteam.svg);
+
+                    &:hover,
+                    &:active {
+                        background-image: url(../../assets/myteam-hover.svg);
+                    }
                 }
             }
         }
@@ -77,12 +98,21 @@
         ul {
             gap: 60px;
 
+            li{
+                flex: none;
+
             a {
                 font-size: 22px;
 
                 .nav-text {
                     display: flex;
                 }
+            }
+
+        }
+
+            .my-team-mobile {
+                display: none;
             }
 
             .nav-cta {

@@ -1,6 +1,6 @@
 <template>
     <div class="welcome">
       <h1>Welcome to statpad!</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <p>The web application for a more in depth vue of football statistics and information. Check out live scores, league tables, player stats and see what your favourite team is doing this season!</p>
     </div>
 </template>
