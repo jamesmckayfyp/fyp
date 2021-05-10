@@ -1,10 +1,6 @@
 <template>
   <div class="container">
-    <select
-      v-model="selected"
-      @change="changeLeague($event)"
-      class="league-select"
-    >
+    <select v-model="selected" @change="changeLeague($event)" class="league-select">
       <option
         v-for="option in options"
         :value="option.value"
@@ -14,81 +10,29 @@
         {{ option.name }}
       </option>
     </select>
-
-    <LeagueTable :selectedTable="table"/>
-
-    <LeagueChart />
-    <LeagueScorers
-      heading="Top Scorers"
-      :selectedScorers="scorers"
-    />
-    <LeagueAssists
-      heading="Most Assists"
-      :selectedAssists="assists"
-    />
-    <LeagueCombined
-      heading="Most Goals & Assists"
-      :selectedCombined="combined"
-    />
+    <component :is="selected"></component>
   </div>
 </template>
 
 <script>
-// components
-import LeagueTable from "./LeagueTable";
-import LeagueChart from "./LeagueChart";
-import LeagueScorers from "./LeagueScorers";
-import LeagueAssists from "./LeagueAssists";
-import LeagueCombined from "./LeagueCombined";
-
-// json data
-import leagueA from "../../json/leagueA.json";
-import leagueB from "../../json/leagueB.json";
-
+import LeagueA from "./LeagueA";
+import LeagueB from "./LeagueB";
 export default {
   name: "TablesContent",
-  components: {
-    LeagueTable,
-    LeagueChart,
-    LeagueScorers,
-    LeagueAssists,
-    LeagueCombined,
-  },
+  components: { LeagueA, LeagueB },
   data() {
     return {
-      selected: "leagueA",
-      name: leagueA.competition.name,
-      table: leagueA.standings[0].table,
-      scorers: leagueA.stats[0].table,
-      assists: leagueA.stats[1].table,
-      combined: leagueA.stats[2].table,
-     
-
+      selected: "LeagueA",
       options: [
-        {
-          value: "leagueA",
-          name: leagueA.competition.name,
-          table: leagueA.standings[0].table,
-          scorers: leagueA.stats[0].table,
-          assists: leagueA.stats[1].table,
-          combined: leagueA.stats[2].table,
-        },
-        {
-          value: "leagueB",
-          name: leagueB.competition.name,
-          table: leagueB.standings[0].table,
-          scorers: leagueB.stats[0].table,
-          assists: leagueB.stats[1].table,
-          combined: leagueB.stats[2].table,
-        },
-      ]
-
+        { name: "Premier League", value: "LeagueA" },
+        { name: "Serie A", value: "LeagueB" },
+      ],
     };
   },
   methods: {
     changeLeague(event) {
       this.selected = option.value;
-    }
-  }
+    },
+  },
 };
 </script>

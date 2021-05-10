@@ -1,6 +1,6 @@
 <template>
   <div class="league-table">
-    <!-- <LeagueTableChange /> -->
+    <LeagueTableChange />
     <div class="league-table-block">
       <div class="league-table-block--row head">
         <div class="league-table-block--row__column pos">#</div>
@@ -17,62 +17,62 @@
       </div>
       <div class="league-table-block--row data">
         <div class="league-table-block--row__column pos">
-          <div v-for="data in leagueTable" :key="data.position">
-            {{ data.position }}
+          <div v-for="data in selectedLeague" :key="data.rank">
+            {{ selectedLeague.rank }}
           </div>
         </div>
-        <div class="league-table-block--row__column short-team">
-          <div v-for="data in leagueTable" :key="data.name">
+        <!-- <div class="league-table-block--row__column short-team">
+          <div v-for="data in selectedLeague" :key="data.name">
             <img :src="data.team.crestUrl" :alt="data.team.mediumName">
             {{ data.team.shortName }}
           </div>
         </div>
         <div class="league-table-block--row__column team">
-          <div v-for="data in leagueTable" :key="data.name">
+          <div v-for="data in selectedLeague" :key="data.name">
             <img :src="data.team.crestUrl" :alt="data.team.mediumName">
             {{ data.team.mediumName }}
           </div>
         </div>
         <div class="league-table-block--row__column games">
-          <div v-for="data in leagueTable" :key="data.games">
+          <div v-for="data in selectedLeague" :key="data.games">
             {{ data.playedGames }}
           </div>
         </div>
         <div class="league-table-block--row__column w">
-          <div v-for="data in leagueTable" :key="data.won">
+          <div v-for="data in selectedLeague" :key="data.won">
             {{ data.won }}
           </div>
         </div>
         <div class="league-table-block--row__column d">
-          <div v-for="data in leagueTable" :key="data.draw">
+          <div v-for="data in selectedLeague" :key="data.draw">
             {{ data.draw }}
           </div>
         </div>
         <div class="league-table-block--row__column l">
-          <div v-for="data in leagueTable" :key="data.lost">
+          <div v-for="data in selectedLeague" :key="data.lost">
             {{ data.lost }}
           </div>
         </div>
         <div class="league-table-block--row__column gf">
-          <div v-for="data in leagueTable" :key="data.goalsFor">
+          <div v-for="data in selectedLeague" :key="data.goalsFor">
             {{ data.goalsFor }}
           </div>
         </div>
         <div class="league-table-block--row__column ga">
-          <div v-for="data in leagueTable" :key="data.goalsAgainst">
+          <div v-for="data in selectedLeague" :key="data.goalsAgainst">
             {{ data.goalsAgainst }}
           </div>
         </div>
         <div class="league-table-block--row__column gd">
-          <div v-for="data in leagueTable" :key="data.goalDifference">
+          <div v-for="data in selectedLeague" :key="data.goalDifference">
             {{ data.goalDifference }}
           </div>
         </div>
         <div class="league-table-block--row__column points">
-          <div v-for="data in leagueTable" :key="data.points">
+          <div v-for="data in selectedLeague" :key="data.points">
             {{ data.points }}
           </div>
-        </div>
+        </div> -->
       </div>
     </div>
   </div>
@@ -83,7 +83,7 @@ import LeagueTableChange from "./LeagueTableChange";
 
 export default {
   name: "LeagueTable",
-  props : ['leagueTable'],
+  props : ['selectedLeague'],
   components: {LeagueTableChange}
 };
 </script>

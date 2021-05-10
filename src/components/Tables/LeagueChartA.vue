@@ -1,12 +1,11 @@
 <template>
     <div class="league-charts">
-        <LeagueChartChange />
+        <!-- <LeagueChartChange /> -->
         <div class="league-charts--block">
             <div class="league-charts--block__head">Table Points</div>
             <div class="league-charts--block__content">
                 <div class="chart-container">
-                    <!-- <LineChartA /> -->
-                    <!-- <LineChartB /> -->
+                    <TableBarChartA />
                 </div>
             </div>
         </div>
@@ -16,21 +15,13 @@
 <script>
 import LeagueChartChange from "./LeagueChartChange";
 
-import LineChartA from "./LineChartA"
-import LineChartB from "./LineChartB"
+import TableBarChartA from "./TableBarChartA"
 
 export default {
   name: 'LeagueChart',
   components : {
       LeagueChartChange,
-      LineChartA,
-      LineChartB
+      TableBarChartA
     }
 }
 </script>
-
-<style scoped>
-/* .chart-container {
-    width: 150px;
-} */
-</style>
