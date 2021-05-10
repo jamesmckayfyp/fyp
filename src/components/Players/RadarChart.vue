@@ -6,36 +6,44 @@ export default {
   extends: Radar,
   data: () => ({
     chartdata: {
-      labels: ["Goals", "Assists", "MOTM", "Clean Sheets"],
+      labels: ["Goals", "Assists", "Clean Sheets", "MOTM"],
       datasets: [
         {
-          label: "Points",
-          backgroundColor: "#349749",
-          data: [74, 63, 56, 55, 0],
+          label: 'Player Stat',
+          data: [65, 59, 90, 81,],
+          fill: true,
+          backgroundColor: '#349749',
+          borderColor: '#F2F4F0',
+          pointBackgroundColor: '#349749',
+          pointBorderColor: '#F2F4F0',
+          pointHoverBackgroundColor: '#F2F4F0',
+          pointHoverBorderColor: '#349749'
         },
       ],
     },
     options: {
+      legend: {display: false},
       responsive: true,
       maintainAspectRatio: false,
       scales: {
-        yAxes: [
-          {
-            ticks: {
-              fontColor: "#F2F4F0",
-              borderColor: "#F2F4F0",
+        r: {
+            angleLines: {
+                display: false
             },
-          },
-        ],
-        xAxes: [
-          {
-            ticks: {
-              fontColor: "#F2F4F0",
-              borderColor: "#F2F4F0",
+            min: 50,
+            max: 100,
+            gridLines: {
+              display: false,
             },
-          },
-        ],
-      },
+            ticks: {
+              min: 50,
+              max: 80,
+              fontColor: "#F2F4F0",
+              fontSize: 15,
+              fontFamily: "DM Sans",
+            },
+        }
+    }
     },
   }),
 

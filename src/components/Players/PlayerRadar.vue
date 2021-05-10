@@ -3,8 +3,9 @@
     <div class="player-radar--block">
       <div class="player-radar--block__head">Player Radar</div>
       <div class="player-radar--block__content">
-        <!-- <RadarChart /> -->
-        Radar Chart
+        <div class="chart-container">
+          <RadarChart />
+        </div>
       </div>
     </div>
   </div>
