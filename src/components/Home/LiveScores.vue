@@ -18,10 +18,10 @@ export default {
   name: 'LiveScores',
   data() {
       return {
-        homeTeam: "PSG",
-        awayTeam: "MUFC",
-        homeScore: 1,
-        awayScore: 3
+        homeTeam: "BRI",
+        awayTeam: "NEW",
+        homeScore: 3,
+        awayScore: 1
       }
   }
 }

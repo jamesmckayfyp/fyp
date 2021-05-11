@@ -3,7 +3,7 @@
     <div class="match-stats--block">
       <div class="match-stats--block__head">Stats</div>
       <div class="match-stats--block__content">
-        <Stats homeTeam="Man United" awayTeam="Roma"/>
+        <Stats homeTeam="Brighton" awayTeam="Newcastle"/>
       </div>
     </div>
   </div>

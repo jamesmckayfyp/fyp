@@ -31,11 +31,11 @@ export default {
       competitions: [
         {
           id: 1,
-          league: "Champions League",
-          type: "Quarter Finals",
+          league: "Premier League",
+          type: "Matchday 30",
           match: {
-            homeTeam: "MUFC",
-            awayTeam: "PSG",
+            homeTeam: "BRI",
+            awayTeam: "NEW",
             homeScore: 3,
             awayScore: 1,
             time: "78'"

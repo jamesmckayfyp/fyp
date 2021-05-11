@@ -31,11 +31,11 @@ export default {
       competitions: [
         {
           id: 1,
-          league: "Europa League",
-          type: "Semi Finals",
+          league: "Serie A",
+          type: "Matchday 32",
           match: {
-            homeTeam: "AJX",
-            awayTeam: "POR",
+            homeTeam: "JUV",
+            awayTeam: "INT",
             time: "20:00"
           }
         },

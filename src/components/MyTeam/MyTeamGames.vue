@@ -35,13 +35,13 @@ export default {
         {
           id: 1,
           league: "Premier League",
-          type: "Matchday 32",
+          type: "Matchday 30",
           match: {
-            homeTeam: "LIV",
-            awayTeam: "CHE",
+            homeTeam: "BRI",
+            awayTeam: "NEW",
             homeScore: 3,
-            awayScore: 4,
-            time: "FT"
+            awayScore: 1,
+            time: "78'"
           }
         },
       ],

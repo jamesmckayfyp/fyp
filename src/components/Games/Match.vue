@@ -1,17 +1,17 @@
 <template>
   <div class="container">
     <MatchScore
-      homeTeam="Man United"
-      awayTeam="Roma"
+      homeTeam="Brighton"
+      awayTeam="Newcastle"
       homeScore="3"
-      awayScore="2"
-      homeScorers="Player (30', 42'), Player (72')"
-      awayScorers="Player (53', 62')"
-      time="88'"
+      awayScore="1"
+      homeScorers="Trossard (30', 42'), Bissouma (72')"
+      awayScorers="Joelinton (53')"
+      time="78'"
     />
-    <MatchInfo competition="Europa League" type="Semi-Finals" />
-    <MatchStats homeTeam="Man United" awayTeam="Roma" />
-    <MatchSquad homeTeam="Man United" awayTeam="Roma" />
+    <MatchInfo competition="Premier League" type="Matchday 32" />
+    <MatchStats homeTeam="Brighton" awayTeam="Newcastle" />
+    <MatchSquad homeTeam="Brighton" awayTeam="Newcastle" />
     
     <!-- <MatchOthers /> -->
   </div>

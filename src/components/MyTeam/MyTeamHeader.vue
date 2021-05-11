@@ -21,8 +21,8 @@ export default {
   name: "MyTeamHeader",
   data() {
     return {
-      clubName: "Manchester United",
-      clubArea: "Manchester",
+      clubName: "Brighton & Hove Albion",
+      clubArea: "Brighton",
       clubNation: "England",
     };
   },

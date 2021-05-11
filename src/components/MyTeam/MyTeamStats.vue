@@ -18,8 +18,8 @@
       <div class="my-team-stats-block--row data">
         <div class="my-team-stats-block--row__column comp">
           <div>{{ compOne }}</div>
-          <div>{{ compOne }}</div>
-          <div>{{ compOne }}</div>
+          <div>{{ compTwo }}</div>
+          <div>{{ compThree }}</div>
         </div>
         <div class="my-team-stats-block--row__column g">
           <div>{{ stat }}</div>
@@ -58,7 +58,9 @@ export default {
   name: "MyTeamStats",
   data() {
     return {
-      compOne: "League A",
+      compOne: "Premier League",
+      compTwo: "FA Cup",
+      compThree: "Carabao Cup",
       stat: "25",
       goalsTotal: "75",
       assistsTotal: "75",

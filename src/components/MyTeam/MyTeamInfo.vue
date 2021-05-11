@@ -37,12 +37,12 @@ export default {
   name: "MyTeamInfo",
   data() {
     return {
-      clubDate: "1878",
-      clubPosition: "2nd",
-      clubStadium: "Old Trafford",
-      clubNickname: "Red Devils",
-      clubManager: "Solskjær",
-      clubCaptain: "Maguire",
+      clubDate: "1901",
+      clubPosition: "15th",
+      clubStadium: "American Express",
+      clubNickname: "Seagulls",
+      clubManager: "Graham Potter",
+      clubCaptain: "Lewis Dunk",
     };
   },
 };

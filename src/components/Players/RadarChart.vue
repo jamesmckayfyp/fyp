@@ -30,14 +30,10 @@ export default {
             angleLines: {
                 display: false
             },
-            min: 50,
-            max: 100,
             gridLines: {
               display: false,
             },
             ticks: {
-              min: 50,
-              max: 80,
               fontColor: "#F2F4F0",
               fontSize: 15,
               fontFamily: "DM Sans",

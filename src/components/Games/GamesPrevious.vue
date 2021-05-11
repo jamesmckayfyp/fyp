@@ -32,7 +32,7 @@ export default {
         {
           id: 1,
           league: "Premier League",
-          type: "Matchday 32",
+          type: "Matchday 29",
           match: {
             homeTeam: "LIV",
             awayTeam: "CHE",
