@@ -10,8 +10,9 @@ export default {
       datasets: [
         {
           label: 'Player Stat',
-          data: [65, 59, 90, 81,],
+          data: [12, 8, 4, 5,],
           fill: true,
+          color: "white",
           backgroundColor: '#349749',
           borderColor: '#F2F4F0',
           pointBackgroundColor: '#349749',
