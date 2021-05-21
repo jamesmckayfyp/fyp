@@ -11,9 +11,8 @@
     />
     <MatchInfo competition="Premier League" type="Matchday 32" />
     <MatchStats homeTeam="Brighton" awayTeam="Newcastle" />
+    <MatchEvents />
     <MatchSquad homeTeam="Brighton" awayTeam="Newcastle" />
-    
-    <!-- <MatchOthers /> -->
   </div>
 </template>
 
@@ -22,10 +21,10 @@ import MatchScore from "./MatchScore";
 import MatchInfo from "./MatchInfo";
 import MatchSquad from "./MatchSquad";
 import MatchStats from "./MatchStats";
-import MatchOthers from "./MatchOthers";
+import MatchEvents from "./MatchEvents";
 
 export default {
   name: "Match",
-  components: { MatchScore, MatchInfo, MatchSquad, MatchStats, MatchOthers },
+  components: { MatchScore, MatchInfo, MatchSquad, MatchStats, MatchEvents},
 };
 </script>
