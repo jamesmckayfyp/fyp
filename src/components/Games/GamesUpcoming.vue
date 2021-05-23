@@ -31,8 +31,8 @@ export default {
       competitions: [
         {
           id: 1,
-          league: "Serie A",
-          type: "Matchday 32",
+          league: "Championship",
+          type: "Matchday 45",
           match: {
             homeTeam: "JUV",
             awayTeam: "INT",

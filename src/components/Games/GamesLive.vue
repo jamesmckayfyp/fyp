@@ -31,8 +31,8 @@ export default {
       competitions: [
         {
           id: 1,
-          league: "Premier League",
-          type: "Matchday 30",
+          league: "Championship",
+          type: "Matchday 45",
           match: {
             homeTeam: "BRI",
             awayTeam: "NEW",

@@ -26,7 +26,7 @@ export default {
   components: { GamesLive, GamesPrevious, GamesUpcoming },
   data() {
     return {
-      component: "GamesLive",
+      component: "GamesUpcoming",
     };
   },
   methods: {

@@ -3,7 +3,7 @@
         "matchInfo": {
             "comp": "Championship",
             "type": "Gameweek 45",
-            "time": "22",
+            "time": "22'",
             "teamHome": {
                 "team": {
                     "id": 0,
@@ -350,70 +350,71 @@
                 "shortName": "NOR",
                 "logo": "https://media.api-sports.io/football/teams/71.png",
                 "statistics": [{
+                    "shotsOn": {
                         "type": "Shots on Goal",
-                        "value": 2
+                        "value": 4
                     },
-                    {
+                    "shotsOff": {
                         "type": "Shots off Goal",
                         "value": 4
                     },
-                    {
+                    "shotsTotal": {
                         "type": "Total Shots",
-                        "value": 6
+                        "value": 8
                     },
-                    {
+                    "shotsBlocked": {
                         "type": "Blocked Shots",
-                        "value": 0
+                        "value": 2
                     },
-                    {
-                        "type": "Shots insidebox",
+                    "shotsInBox": {
+                        "type": "Shots Inside box",
+                        "value": 5
+                    },
+                    "shotsOutBox": {
+                        "type": "Shots Outside box",
                         "value": 3
                     },
-                    {
-                        "type": "Shots outsidebox",
-                        "value": 3
-                    },
-                    {
+                    "fouls": {
                         "type": "Fouls",
-                        "value": 1
+                        "value": 2
                     },
-                    {
+                    "corners": {
                         "type": "Corner Kicks",
                         "value": 3
                     },
-                    {
+                    "offsides": {
                         "type": "Offsides",
-                        "value": 1
+                        "value": 2
                     },
-                    {
-                        "type": "Ball Possession",
+                    "possession": {
+                        "type": "Possession",
                         "value": "59%"
                     },
-                    {
+                    "yellows": {
                         "type": "Yellow Cards",
                         "value": 0
                     },
-                    {
+                    "reds": {
                         "type": "Red Cards",
                         "value": 0
                     },
-                    {
+                    "saves": {
                         "type": "Goalkeeper Saves",
-                        "value": 2
+                        "value": 1
                     },
-                    {
-                        "type": "Total passes",
+                    "passesTotal": {
+                        "type": "Total Passes",
                         "value": 110
                     },
-                    {
-                        "type": "Passes accurate",
+                    "passesAccurate": {
+                        "type": "Passes Completed",
                         "value": 100
                     },
-                    {
+                    "passesPercent": {
                         "type": "Passes %",
                         "value": "90%"
                     }
-                ]
+                }]
             },
             "teamAway": {
                 "id": 1,
@@ -421,69 +422,71 @@
                 "shortName": "BRE",
                 "logo": "https://media.api-sports.io/football/teams/55.png",
                 "statistics": [{
+                    "shotsOn": {
                         "type": "Shots on Goal",
                         "value": 2
                     },
-                    {
+                    "shotsOff": {
                         "type": "Shots off Goal",
-                        "value": 2
+                        "value": 1
                     },
-                    {
+                    "shotsTotal": {
                         "type": "Total Shots",
-                        "value": 4
+                        "value": 3
                     },
-                    {
+                    "shotsBlocked": {
                         "type": "Blocked Shots",
                         "value": 1
                     },
-                    {
-                        "type": "Shots insidebox",
-                        "value": 3
+                    "shotsInBox": {
+                        "type": "Shots Inside box",
+                        "value": 2
                     },
-                    {
-                        "type": "Shots outsidebox",
+                    "shotsOutBox": {
+                        "type": "Shots Outside box",
                         "value": 1
                     },
-                    {
+                    "fouls": {
                         "type": "Fouls",
-                        "value": 4
+                        "value": 5
                     },
-                    {
+                    "corners": {
                         "type": "Corner Kicks",
                         "value": 1
                     },
-                    {
+                    "offsides": {
                         "type": "Offsides",
                         "value": 1
                     },
-                    {
-                        "type": "Ball Possession",
+                    "possession": {
+                        "type": "Possession",
                         "value": "41%"
                     },
-                    {
+                    "yellows": {
                         "type": "Yellow Cards",
                         "value": 1
                     },
-                    {
+                    "reds": {
                         "type": "Red Cards",
                         "value": 0
                     },
-                    {
+                    "saves": {
                         "type": "Goalkeeper Saves",
-                        "value": 3
+                        "value": 2
                     },
-                    {
-                        "type": "Total passes",
-                        "value": 85
+                    "passesTotal": {
+                        "type": "Total Passes",
+                        "value": 88
                     },
-                    {
-                        "type": "Passes accurate",
-                        "value": 70
+                    "passesAccurate": {
+                        "type": "Passes Completed",
+                        "value": 77
                     },
-                    {
+                    "passesPercent": {
                         "type": "Passes %",
-                        "value": "82%"
+                        "value": "87%"
                     }
+                }
                 ]
             }
         }
