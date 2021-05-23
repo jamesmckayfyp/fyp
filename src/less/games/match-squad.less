@@ -13,7 +13,7 @@
         }
 
         &__content {
-            
+
             &--tabs {
                 display: flex;
                 height: 40px;
@@ -54,7 +54,7 @@
             left: 0;
             border-radius: 10px 0;
             padding: 10px;
-            background: @dark-accent-colour;    
+            background: @dark-accent-colour;
             font-weight: 500;
             font-size: 18px;
             border-right: solid 2px @secondary-colour;
@@ -121,7 +121,8 @@
         flex-direction: column;
         gap: 10px;
 
-        &-left, &-right {
+        &-left,
+        &-right {
             display: flex;
             flex-direction: column;
             gap: 5px;
@@ -130,17 +131,17 @@
                 font-weight: 600;
                 font-size: 18px;
             }
-    
+
             &__players {
                 display: flex;
                 flex-direction: column;
                 gap: 5px;
-    
+
                 &--player {
                     display: flex;
                     gap: 5px;
                     align-items: center;
-    
+
                     &__number {
                         background: @secondary-colour;
                         width: 20px;
@@ -152,13 +153,48 @@
                         .flex-center();
                         font-weight: 600;
                     }
-    
+
                     &__name {
                         font-size: 14px;
                     }
                 }
             }
         }
-        
+
+    }
+}
+
+@media @mobile {
+    .line-up {
+        flex-direction: row;
+        justify-content: space-between;
+
+        &--pitch {
+            flex: 1;
+            border-right: 2px solid @secondary-colour;
+            border-bottom: 0;
+            border-radius: 10px 0 0 10px;
+        }
+
+        &--subs {
+            flex: 0 40%;
+            align-items: center;
+            border-radius: 0 10px 10px 0;
+            justify-content: space-around;
+            flex-direction: row;
+            align-items: unset;
+
+            &-left {
+
+                &__players {
+                    height: 100%;
+                    gap: 0;
+
+                    &--player {
+                        flex: 1;
+                    }
+                }
+            }
+        }
     }
 }

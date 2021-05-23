@@ -17,7 +17,7 @@
             Away
           </div>
         </div>
-        <component :is="lineUp" />
+        <component :is="lineUp" :squadData="squadData"/>
       </div>
     </div>
   </div>
@@ -30,9 +30,10 @@ import AwayTeam from "./AwayTeam";
 export default {
   name: "MatchSquad",
   components: { HomeTeam, AwayTeam },
-  props: ["homeTeam", "awayTeam"],
+  props: ["homeTeam", "awayTeam", "squadData"],
   data() {
     return {
+      squadData: [],
       lineUp: "HomeTeam",
     };
   },

@@ -1,6 +1,6 @@
 <template>
   <div class="match-info">
-      <h2>{{competition}} - {{type}}</h2>
+      <h2>{{infoData.comp}} - {{infoData.type}}</h2>
   </div>
 </template>
 
@@ -8,12 +8,6 @@
 
 export default {
   name: "MatchInfo",
-  props: ["infoData"],
-  data() {
-    return {
-      competition: "",
-      type: "",
-    }
-  }
+  props: ["infoData"]
 };
 </script>

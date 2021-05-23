@@ -3,17 +3,26 @@
     <div class="match-events--block">
       <div class="match-events--block__head">Match Events</div>
       <div class="match-events--block__content">
-        <Events />
+        <div class="events">
+          <div class="events--home" v-for="items in eventData.teamHome" :key="items">
+            {{ eventData.teamHome[0].time }}
+            {{ eventData.teamHome[0].player }}
+            {{ eventData.teamHome[0].type }}
+          </div>
+          <div class="events--away" v-for="items in eventData.teamAway" :key="items">
+            {{ eventData.teamAway[0].time }}
+            {{ eventData.teamAway[0].player }}
+            {{ eventData.teamAway[0].type }}
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </template>
 
 <script>
-import Events from "./Events";
-
 export default {
   name: "MatchEvents",
-  components: {Events}
+  props: ["eventData"],
 };
 </script>
