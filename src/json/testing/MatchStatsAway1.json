@@ -1,21 +1,9 @@
 {
-    "get": "fixtures/statistics",
-    "parameters": {
-        "fixture": "215662",
-        "team": "71"
-    },
-    "errors": [],
-    "results": 1,
-    "paging": {
-        "current": 1,
-        "total": 1
-    },
-    "response": [{
-        "team": {
-            "id": 71,
-            "name": "Norwich",
-            "logo": "https://media.api-sports.io/football/teams/71.png"
-        },
+    "teamAway": {
+        "id": 1,
+        "name": "Brentford",
+        "shortName": "BRE",
+        "logo": "https://media.api-sports.io/football/teams/55.png",
         "statistics": [{
                 "type": "Shots on Goal",
                 "value": 3
@@ -81,5 +69,5 @@
                 "value": "50%"
             }
         ]
-    }]
+    }
 }

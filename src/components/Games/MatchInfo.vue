@@ -8,6 +8,12 @@
 
 export default {
   name: "MatchInfo",
-  props: ["competition", "type"]
+  props: ["infoData"],
+  data() {
+    return {
+      competition: "",
+      type: "",
+    }
+  }
 };
 </script>

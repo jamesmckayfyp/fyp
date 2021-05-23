@@ -1,18 +1,10 @@
 <template>
   <div class="container">
-    <MatchScore
-      homeTeam="Brighton"
-      awayTeam="Newcastle"
-      homeScore="3"
-      awayScore="1"
-      homeScorers="Trossard (30', 42'), Bissouma (72')"
-      awayScorers="Joelinton (53')"
-      time="78'"
-    />
-    <MatchInfo competition="Premier League" type="Matchday 32" />
-    <MatchStats homeTeam="Brighton" awayTeam="Newcastle" />
+    <MatchScore />
+    <MatchInfo />
+    <MatchStats />
     <MatchEvents />
-    <MatchSquad homeTeam="Brighton" awayTeam="Newcastle" />
+    <MatchSquad />
   </div>
 </template>
 
@@ -25,6 +17,6 @@ import MatchEvents from "./MatchEvents";
 
 export default {
   name: "Match",
-  components: { MatchScore, MatchInfo, MatchSquad, MatchStats, MatchEvents},
+  components: { MatchScore, MatchInfo, MatchSquad, MatchStats, MatchEvents },
 };
 </script>

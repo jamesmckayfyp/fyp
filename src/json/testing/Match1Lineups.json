@@ -1,0 +1,151 @@
+{
+    "team": {
+        "name": "Norwich",
+        "logo": "https://media.api-sports.io/football/teams/71.png"
+    },
+    "coach": {
+        "name": "Daniel Farke"
+    },
+    "formation": "4-2-3-1",
+    "startXI": [{
+        "gk": {
+            "player": {
+                "id": 0,
+                "name": "Krul",
+                "number": 1,
+                "pos": "GK"
+            }
+        },
+        "lb": {
+            "player": {
+                "id": 1,
+                "name": "Giannoulis",
+                "number": 2,
+                "pos": "LB"
+            }
+        },
+        "lcb": {
+            "player": {
+                "id": 2,
+                "name": "Gibson",
+                "number": 4,
+                "pos": "CB"
+            }
+        },
+        "rcb": {
+            "player": {
+                "id": 3,
+                "name": "Hanley",
+                "number": 5,
+                "pos": "CB"
+            }
+        },
+        "rb": {
+            "player": {
+                "id": 4,
+                "name": "Aarons",
+                "number": 3,
+                "pos": "RB"
+            }
+        },
+        "ldm": {
+            "player": {
+                "id": 5,
+                "name": "Skipp",
+                "number": 6,
+                "pos": "DM"
+            }
+        },
+        "rdm": {
+            "player": {
+                "id": 6,
+                "name": "McLean",
+                "number": 8,
+                "pos": "DM"
+            }
+        },
+        "lm": {
+            "player": {
+                "id": 7,
+                "name": "Placheta",
+                "number": 11,
+                "pos": "LM"
+            }
+        },
+        "cam": {
+            "player": {
+                "id": 8,
+                "name": "Vranic",
+                "number": 10,
+                "pos": "AM"
+            }
+        },
+        "rm": {
+            "player": {
+                "id": 9,
+                "name": "Buendia",
+                "number": 7,
+                "pos": "RM"
+            }
+        },
+        "st": {
+            "player": {
+                "id": 10,
+                "name": "Pukki",
+                "number": 9,
+                "pos": "ST"
+            }
+        }
+    }],
+    "substitutes": [{
+        "sub1": {
+            "player": {
+                "id": 11,
+                "name": "Sorenson",
+                "number": 12
+            }
+        },
+        "sub2": {
+            "player": {
+                "id": 12,
+                "name": "Hugill",
+                "number": 13
+            }
+        },
+        "sub3": {
+            "player": {
+                "id": 13,
+                "name": "Rupp",
+                "number": 14
+            }
+        },
+        "sub4": {
+            "player": {
+                "id": 14,
+                "name": "Zimmerman",
+                "number": 14
+            }
+        },
+        "sub5": {
+            "player": {
+                "id": 15,
+                "name": "Idah",
+                "number": 15
+            }
+        },
+        "sub6": {
+            "player": {
+                "id": 16,
+                "name": "Tettey",
+                "number": 16
+            }
+        },
+        "sub7": {
+            "player": {
+                "id": 17,
+                "name": "Dowell",
+                "number": 17
+            }
+        }
+    }]
+}
