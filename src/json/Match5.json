@@ -1,0 +1,514 @@
+{
+    "match": {
+        "matchInfo": {
+            "comp": "Championship",
+            "type": "Gameweek 45",
+            "time": "88'",
+            "teamHome": {
+                "team": {
+                    "id": 0,
+                    "name": "Norwich",
+                    "shortName": "NOR",
+                    "logo": "https://media.api-sports.io/football/teams/71.png"
+                },
+                "score": "2"
+            },
+            "teamAway": {
+                "team": {
+                    "id": 1,
+                    "name": "Brentford",
+                    "shortName": "BRE",
+                    "logo": "https://media.api-sports.io/football/teams/55.png"
+                },
+                "score": "3"
+            }
+        },
+        "matchEvents": {
+            "teamHome": [{
+                    "time": "21'",
+                    "player": "Buendia",
+                    "type": "Goal"
+                },
+                {
+                    "time": "48'",
+                    "player": "Skipp",
+                    "type": "Goal"
+                }
+            ],
+            "teamAway": [{
+                    "time": "18'",
+                    "player": "Toney",
+                    "type": "Yellow"
+                },
+                {
+                    "time": "43'",
+                    "player": "Toney",
+                    "type": "Goal"
+                },
+                {
+                    "time": "56'",
+                    "player": "Mbuemo",
+                    "type": "Goal"
+                },
+                {
+                    "time": "85'",
+                    "player": "Toney",
+                    "type": "Goal"
+                }
+            ]
+        },
+        "matchSquads": {
+            "teamHome": {
+                "team": {
+                    "id": 0,
+                    "name": "Norwich",
+                    "logo": "https://media.api-sports.io/football/teams/71.png"
+                },
+                "coach": {
+                    "name": "Daniel Farke"
+                },
+                "formation": "4-2-3-1",
+                "startXI": [{
+                    "gk": {
+                        "player": {
+                            "id": 0,
+                            "name": "Krul",
+                            "number": 1,
+                            "pos": "GK"
+                        }
+                    },
+                    "lb": {
+                        "player": {
+                            "id": 1,
+                            "name": "Giannoulis",
+                            "number": 2,
+                            "pos": "LB"
+                        }
+                    },
+                    "lcb": {
+                        "player": {
+                            "id": 2,
+                            "name": "Gibson",
+                            "number": 4,
+                            "pos": "CB"
+                        }
+                    },
+                    "rcb": {
+                        "player": {
+                            "id": 3,
+                            "name": "Hanley",
+                            "number": 5,
+                            "pos": "CB"
+                        }
+                    },
+                    "rb": {
+                        "player": {
+                            "id": 4,
+                            "name": "Aarons",
+                            "number": 3,
+                            "pos": "RB"
+                        }
+                    },
+                    "ldm": {
+                        "player": {
+                            "id": 5,
+                            "name": "Skipp",
+                            "number": 6,
+                            "pos": "DM"
+                        }
+                    },
+                    "rdm": {
+                        "player": {
+                            "id": 6,
+                            "name": "McLean",
+                            "number": 8,
+                            "pos": "DM"
+                        }
+                    },
+                    "lm": {
+                        "player": {
+                            "id": 7,
+                            "name": "Placheta",
+                            "number": 11,
+                            "pos": "LM"
+                        }
+                    },
+                    "cam": {
+                        "player": {
+                            "id": 8,
+                            "name": "Vranic",
+                            "number": 10,
+                            "pos": "AM"
+                        }
+                    },
+                    "rm": {
+                        "player": {
+                            "id": 9,
+                            "name": "Buendia",
+                            "number": 7,
+                            "pos": "RM"
+                        }
+                    },
+                    "st": {
+                        "player": {
+                            "id": 10,
+                            "name": "Pukki",
+                            "number": 9,
+                            "pos": "ST"
+                        }
+                    }
+                }],
+                "substitutes": [{
+                    "sub1": {
+                        "player": {
+                            "id": 11,
+                            "name": "Sorenson",
+                            "number": 12
+                        }
+                    },
+                    "sub2": {
+                        "player": {
+                            "id": 12,
+                            "name": "Hugill",
+                            "number": 13
+                        }
+                    },
+                    "sub3": {
+                        "player": {
+                            "id": 13,
+                            "name": "Rupp",
+                            "number": 14
+                        }
+                    },
+                    "sub4": {
+                        "player": {
+                            "id": 14,
+                            "name": "Zimmerman",
+                            "number": 14
+                        }
+                    },
+                    "sub5": {
+                        "player": {
+                            "id": 15,
+                            "name": "Idah",
+                            "number": 15
+                        }
+                    },
+                    "sub6": {
+                        "player": {
+                            "id": 16,
+                            "name": "Tettey",
+                            "number": 16
+                        }
+                    },
+                    "sub7": {
+                        "player": {
+                            "id": 17,
+                            "name": "Dowell",
+                            "number": 17
+                        }
+                    }
+                }]
+            },
+            "teamAway": {
+                "team": {
+                    "id": 1,
+                    "name": "Brentford",
+                    "logo": "https://media.api-sports.io/football/teams/55.png"
+                },
+                "coach": {
+                    "name": "Thomas Frank"
+                },
+                "formation": "4-3-3",
+                "startXI": [{
+                    "gk": {
+                        "player": {
+                            "id": 0,
+                            "name": "Martin",
+                            "number": 1,
+                            "pos": "GK"
+                        }
+                    },
+                    "lb": {
+                        "player": {
+                            "id": 1,
+                            "name": "Sorenson",
+                            "number": 2,
+                            "pos": "LB"
+                        }
+                    },
+                    "lcb": {
+                        "player": {
+                            "id": 2,
+                            "name": "Pinnock",
+                            "number": 4,
+                            "pos": "CB"
+                        }
+                    },
+                    "rcb": {
+                        "player": {
+                            "id": 3,
+                            "name": "Reid",
+                            "number": 5,
+                            "pos": "CB"
+                        }
+                    },
+                    "rb": {
+                        "player": {
+                            "id": 4,
+                            "name": "Dalsgaard",
+                            "number": 3,
+                            "pos": "RB"
+                        }
+                    },
+                    "lcm": {
+                        "player": {
+                            "id": 5,
+                            "name": "Ghoddos",
+                            "number": 6,
+                            "pos": "CM"
+                        }
+                    },
+                    "cm": {
+                        "player": {
+                            "id": 6,
+                            "name": "Janelt",
+                            "number": 8,
+                            "pos": "CM"
+                        }
+                    },
+                    "rcm": {
+                        "player": {
+                            "id": 7,
+                            "name": "Jensen",
+                            "number": 10,
+                            "pos": "CM"
+                        }
+                    },
+                    "lw": {
+                        "player": {
+                            "id": 8,
+                            "name": "Canos",
+                            "number": 11,
+                            "pos": "LW"
+                        }
+                    },
+                    "st": {
+                        "player": {
+                            "id": 9,
+                            "name": "Toney",
+                            "number": 9,
+                            "pos": "ST"
+                        }
+                    },
+                    "rw": {
+                        "player": {
+                            "id": 10,
+                            "name": "Mbuemo",
+                            "number": 7,
+                            "pos": "RW"
+                        }
+                    }
+                }],
+                "substitutes": [{
+                    "sub1": {
+                        "player": {
+                            "id": 11,
+                            "name": "Fosu-Henry",
+                            "number": 12
+                        }
+                    },
+                    "sub2": {
+                        "player": {
+                            "id": 12,
+                            "name": "Forss",
+                            "number": 13
+                        }
+                    },
+                    "sub3": {
+                        "player": {
+                            "id": 13,
+                            "name": "Norgaard",
+                            "number": 14
+                        }
+                    },
+                    "sub4": {
+                        "player": {
+                            "id": 14,
+                            "name": "Rasmussen",
+                            "number": 14
+                        }
+                    },
+                    "sub5": {
+                        "player": {
+                            "id": 15,
+                            "name": "Zamburek",
+                            "number": 15
+                        }
+                    },
+                    "sub6": {
+                        "player": {
+                            "id": 16,
+                            "name": "Marcondes",
+                            "number": 16
+                        }
+                    },
+                    "sub7": {
+                        "player": {
+                            "id": 17,
+                            "name": "Bidstrup",
+                            "number": 17
+                        }
+                    }
+                }]
+            }
+        },
+        "matchStats": {
+            "teamHome": {
+                "id": 0,
+                "name": "Norwich",
+                "shortName": "NOR",
+                "logo": "https://media.api-sports.io/football/teams/71.png",
+                "statistics": [{
+                    "shotsOn": {
+                        "type": "Shots on Goal",
+                        "value": 12
+                    },
+                    "shotsOff": {
+                        "type": "Shots off Goal",
+                        "value": 7
+                    },
+                    "shotsTotal": {
+                        "type": "Total Shots",
+                        "value": 19
+                    },
+                    "shotsBlocked": {
+                        "type": "Blocked Shots",
+                        "value": 5
+                    },
+                    "shotsInBox": {
+                        "type": "Shots Inside box",
+                        "value": 11
+                    },
+                    "shotsOutBox": {
+                        "type": "Shots Outside box",
+                        "value": 8
+                    },
+                    "fouls": {
+                        "type": "Fouls",
+                        "value": 8
+                    },
+                    "corners": {
+                        "type": "Corner Kicks",
+                        "value": 8
+                    },
+                    "offsides": {
+                        "type": "Offsides",
+                        "value": 6
+                    },
+                    "possession": {
+                        "type": "Possession",
+                        "value": "56%"
+                    },
+                    "yellows": {
+                        "type": "Yellow Cards",
+                        "value": 0
+                    },
+                    "reds": {
+                        "type": "Red Cards",
+                        "value": 0
+                    },
+                    "saves": {
+                        "type": "Goalkeeper Saves",
+                        "value": 8
+                    },
+                    "passesTotal": {
+                        "type": "Total Passes",
+                        "value": 486
+                    },
+                    "passesAccurate": {
+                        "type": "Passes Completed",
+                        "value": 445
+                    },
+                    "passesPercent": {
+                        "type": "Passes %",
+                        "value": "91%"
+                    }
+                }]
+            },
+            "teamAway": {
+                "id": 1,
+                "name": "Brentford",
+                "shortName": "BRE",
+                "logo": "https://media.api-sports.io/football/teams/55.png",
+                "statistics": [{
+                    "shotsOn": {
+                        "type": "Shots on Goal",
+                        "value": 14
+                    },
+                    "shotsOff": {
+                        "type": "Shots off Goal",
+                        "value": 6
+                    },
+                    "shotsTotal": {
+                        "type": "Total Shots",
+                        "value": 20
+                    },
+                    "shotsBlocked": {
+                        "type": "Blocked Shots",
+                        "value": 8
+                    },
+                    "shotsInBox": {
+                        "type": "Shots Inside box",
+                        "value": 12
+                    },
+                    "shotsOutBox": {
+                        "type": "Shots Outside box",
+                        "value": 8
+                    },
+                    "fouls": {
+                        "type": "Fouls",
+                        "value": 10
+                    },
+                    "corners": {
+                        "type": "Corner Kicks",
+                        "value": 7
+                    },
+                    "offsides": {
+                        "type": "Offsides",
+                        "value": 5
+                    },
+                    "possession": {
+                        "type": "Possession",
+                        "value": "44%"
+                    },
+                    "yellows": {
+                        "type": "Yellow Cards",
+                        "value": 1
+                    },
+                    "reds": {
+                        "type": "Red Cards",
+                        "value": 0
+                    },
+                    "saves": {
+                        "type": "Goalkeeper Saves",
+                        "value": 7
+                    },
+                    "passesTotal": {
+                        "type": "Total Passes",
+                        "value": 426
+                    },
+                    "passesAccurate": {
+                        "type": "Passes Completed",
+                        "value": 398
+                    },
+                    "passesPercent": {
+                        "type": "Passes %",
+                        "value": "93%"
+                    }
+                }
+                ]
+            }
+        }
+    }
+}
