@@ -432,69 +432,71 @@
                 "shortName": "BRE",
                 "logo": "https://media.api-sports.io/football/teams/55.png",
                 "statistics": [{
+                    "shotsOn": {
                         "type": "Shots on Goal",
                         "value": 0
                     },
-                    {
+                    "shotsOff": {
                         "type": "Shots off Goal",
                         "value": 0
                     },
-                    {
+                    "shotsTotal": {
                         "type": "Total Shots",
                         "value": 0
                     },
-                    {
+                    "shotsBlocked": {
                         "type": "Blocked Shots",
                         "value": 0
                     },
-                    {
-                        "type": "Shots insidebox",
+                    "shotsInBox": {
+                        "type": "Shots Inside box",
                         "value": 0
                     },
-                    {
-                        "type": "Shots outsidebox",
+                    "shotsOutBox": {
+                        "type": "Shots Outside box",
                         "value": 0
                     },
-                    {
+                    "fouls": {
                         "type": "Fouls",
                         "value": 0
                     },
-                    {
+                    "corners": {
                         "type": "Corner Kicks",
                         "value": 0
                     },
-                    {
+                    "offsides": {
                         "type": "Offsides",
                         "value": 0
                     },
-                    {
-                        "type": "Ball Possession",
+                    "possession": {
+                        "type": "Possession",
                         "value": "0%"
                     },
-                    {
+                    "yellows": {
                         "type": "Yellow Cards",
                         "value": 0
                     },
-                    {
+                    "reds": {
                         "type": "Red Cards",
                         "value": 0
                     },
-                    {
+                    "saves": {
                         "type": "Goalkeeper Saves",
                         "value": 0
                     },
-                    {
-                        "type": "Total passes",
+                    "passesTotal": {
+                        "type": "Total Passes",
                         "value": 0
                     },
-                    {
-                        "type": "Passes accurate",
+                    "passesAccurate": {
+                        "type": "Passes Completed",
                         "value": 10
                     },
-                    {
+                    "passesPercent": {
                         "type": "Passes %",
                         "value": "0%"
                     }
+                }
                 ]
             }
         }
