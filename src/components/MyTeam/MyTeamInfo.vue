@@ -37,12 +37,12 @@ export default {
   name: "MyTeamInfo",
   data() {
     return {
-      clubDate: "1901",
-      clubPosition: "15th",
-      clubStadium: "American Express",
-      clubNickname: "Seagulls",
-      clubManager: "Graham Potter",
-      clubCaptain: "Lewis Dunk",
+      clubDate: "1889",
+      clubPosition: "3rd",
+      clubStadium: "Brentford Community",
+      clubNickname: "The Bees",
+      clubManager: "Thomas Frank",
+      clubCaptain: "Jansson",
     };
   },
 };

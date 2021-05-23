@@ -29,10 +29,10 @@ export default {
   name: "PlayerInfo",
   data() {
     return {
-      playerAge: "26",
-      playerShirtNo: "18",
-      playerPosition: "AM",
-      playerHeight: "180cm",
+      playerAge: "25",
+      playerShirtNo: "17",
+      playerPosition: "ST",
+      playerHeight: "179cm",
     };
   },
 };

@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <MyTeamHeader />
-    <MyTeamGames />
+    <!-- <MyTeamGames /> -->
     <MyTeamInfo />
     <MyTeamStats />
     <MyTeamScorers heading="Club Top Scorers" :selectedScorers="scorers"/>
@@ -11,7 +11,7 @@
 </template>
 
 <script>
-import leagueA from "../../json/leagueA.json";
+import leagueC from "../../json/leagueC.json";
 
 import MyTeamHeader from "./MyTeamHeader";
 import MyTeamGames from "./MyTeamGames";
@@ -34,12 +34,12 @@ export default {
   },
   data() {
     return {
-      selected: "leagueA",
-      name: leagueA.competition.name,
-      table: leagueA.standings[0].table,
-      scorers: leagueA.stats[0].table,
-      assists: leagueA.stats[1].table,
-      combined: leagueA.stats[2].table,
+      selected: "leagueC",
+      name: leagueC.competition.name,
+      table: leagueC.standings[0].table,
+      scorers: leagueC.stats[0].table,
+      assists: leagueC.stats[1].table,
+      combined: leagueC.stats[2].table,
   }}
 };
 </script>

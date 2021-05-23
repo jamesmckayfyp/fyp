@@ -2,7 +2,7 @@
   <div class="player-header">
     <div class="player-header--content">
       <img
-        src="../../assets/player-placeholder.svg"
+        src="https://cdn.soccerwiki.org/images/player/70404.png"
         :alt="playerName"
         class="player-header--content__img"
       />
@@ -21,9 +21,9 @@ export default {
   name: "PlayersHeader",
   data() {
     return {
-      playerName: "Bruno Fernandes",
-      playerClub: "Manchester United",
-      playerNation: "Portugal",
+      playerName: "Ivan Toney",
+      playerClub: "Brentford",
+      playerNation: "England",
     };
   },
 };
