@@ -1,18 +1,18 @@
 <template>
   <div class="container">
-    <div class="data-buttons">
-      <div class="data-buttons--btn" @click="fetchData('https://jamesmckayfyp.github.io/fyp/src/json/Match1.json')">Match 1</div>
-      <div class="data-buttons--btn" @click="fetchData('https://jamesmckayfyp.github.io/fyp/src/json/Match2.json')">Match 2</div>
-      <div class="data-buttons--btn" @click="fetchData('https://jamesmckayfyp.github.io/fyp/src/json/Match3.json')">Match 3</div>
-      <div class="data-buttons--btn" @click="fetchData('https://jamesmckayfyp.github.io/fyp/src/json/Match4.json')">Match 4</div>
-      <div class="data-buttons--btn" @click="fetchData('https://jamesmckayfyp.github.io/fyp/src/json/Match5.json')">Match 5</div>
-    </div>
-
     <MatchScore :scoreData="matchData.match.matchInfo"/>
     <MatchInfo :infoData="matchData.match.matchInfo"/>
-    <MatchStats :statData="matchData.match.matchStats"/>
     <MatchEvents :eventData="matchData.match.matchEvents"/>
+    <MatchStats :statData="matchData.match.matchStats"/>
     <MatchSquad :squadData="matchData.match.matchSquads"/>
+
+     <div class="data-buttons">
+      <div class="data-buttons--btn" @click="fetchData('https://jamesmckayfyp.github.io/fyp/src/json/Match1.json')">Before the match</div>
+      <div class="data-buttons--btn" @click="fetchData('https://jamesmckayfyp.github.io/fyp/src/json/Match2.json')">22'(Norwich Goal)</div>
+      <div class="data-buttons--btn" @click="fetchData('https://jamesmckayfyp.github.io/fyp/src/json/Match3.json')">HT (Norwich Goal & Half Time)</div>
+      <div class="data-buttons--btn" @click="fetchData('https://jamesmckayfyp.github.io/fyp/src/json/Match4.json')">66'(Brentford Equalise)</div>
+      <div class="data-buttons--btn" @click="fetchData('https://jamesmckayfyp.github.io/fyp/src/json/Match5.json')">FT (Brentford Goal & Win)</div>
+    </div>
   </div>
 </template>
 

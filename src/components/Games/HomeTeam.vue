@@ -183,32 +183,6 @@
 <script>
 export default {
   name: "HomeTeam",
-  props: ["squadData"],
-  data() {
-    return {
-      starting11: squadData.teamHome.startXI[0],
-
-      // formation: "4-2-3-1",
-      // gk: "De Gea",
-      // lb: "Shaw",
-      // lcb: "Maguire",
-      // rcb: "Lindelof",
-      // rb: "Wan-Bissaka",
-      // ldm: "Fred",
-      // rdm: "McTominay",
-      // lam: "Rashford",
-      // cam: "Fernandes",
-      // ram: "Greenwood",
-      // st: "Cavani",
-      // subOne: "Henderson",
-      // subTwo: "Bailly",
-      // subThree: "Telles",
-      // subFour: "Tuanzebe",
-      // subFive: "Pogba",
-      // subSix: "van de Beek",
-      // subSeven: "Martial",
-      // staffOne: "Ole Gunnar Solkjaer"
-    };
-  },
+  props: ["squadData"]
 };
 </script>

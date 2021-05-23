@@ -25,25 +25,15 @@
         },
         "matchEvents": {
             "teamHome": [{
-                    "time": 0,
-                    "player": "Player",
-                    "type": "Goal"
-                },
-                {
-                    "time": 0,
-                    "player": "Player",
+                    "time": "21'",
+                    "player": "Buendia",
                     "type": "Goal"
                 }
             ],
             "teamAway": [{
-                    "time": 0,
-                    "player": "Player",
-                    "type": "Goal"
-                },
-                {
-                    "time": 0,
-                    "player": "Player",
-                    "type": "Goal"
+                    "time": "18'",
+                    "player": "Toney",
+                    "type": "Yellow"
                 }
             ]
         },
@@ -361,15 +351,15 @@
                 "logo": "https://media.api-sports.io/football/teams/71.png",
                 "statistics": [{
                         "type": "Shots on Goal",
-                        "value": 0
+                        "value": 2
                     },
                     {
                         "type": "Shots off Goal",
-                        "value": 0
+                        "value": 4
                     },
                     {
                         "type": "Total Shots",
-                        "value": 0
+                        "value": 6
                     },
                     {
                         "type": "Blocked Shots",
@@ -377,27 +367,27 @@
                     },
                     {
                         "type": "Shots insidebox",
-                        "value": 0
+                        "value": 3
                     },
                     {
                         "type": "Shots outsidebox",
-                        "value": 0
+                        "value": 3
                     },
                     {
                         "type": "Fouls",
-                        "value": 0
+                        "value": 1
                     },
                     {
                         "type": "Corner Kicks",
-                        "value": 0
+                        "value": 3
                     },
                     {
                         "type": "Offsides",
-                        "value": 0
+                        "value": 1
                     },
                     {
                         "type": "Ball Possession",
-                        "value": "0%"
+                        "value": "59%"
                     },
                     {
                         "type": "Yellow Cards",
@@ -409,19 +399,19 @@
                     },
                     {
                         "type": "Goalkeeper Saves",
-                        "value": 0
+                        "value": 2
                     },
                     {
                         "type": "Total passes",
-                        "value": 0
+                        "value": 110
                     },
                     {
                         "type": "Passes accurate",
-                        "value": 10
+                        "value": 100
                     },
                     {
                         "type": "Passes %",
-                        "value": "0%"
+                        "value": "90%"
                     }
                 ]
             },
@@ -432,47 +422,47 @@
                 "logo": "https://media.api-sports.io/football/teams/55.png",
                 "statistics": [{
                         "type": "Shots on Goal",
-                        "value": 0
+                        "value": 2
                     },
                     {
                         "type": "Shots off Goal",
-                        "value": 0
+                        "value": 2
                     },
                     {
                         "type": "Total Shots",
-                        "value": 0
+                        "value": 4
                     },
                     {
                         "type": "Blocked Shots",
-                        "value": 0
+                        "value": 1
                     },
                     {
                         "type": "Shots insidebox",
-                        "value": 0
+                        "value": 3
                     },
                     {
                         "type": "Shots outsidebox",
-                        "value": 0
+                        "value": 1
                     },
                     {
                         "type": "Fouls",
-                        "value": 0
+                        "value": 4
                     },
                     {
                         "type": "Corner Kicks",
-                        "value": 0
+                        "value": 1
                     },
                     {
                         "type": "Offsides",
-                        "value": 0
+                        "value": 1
                     },
                     {
                         "type": "Ball Possession",
-                        "value": "0%"
+                        "value": "41%"
                     },
                     {
                         "type": "Yellow Cards",
-                        "value": 0
+                        "value": 1
                     },
                     {
                         "type": "Red Cards",
@@ -480,19 +470,19 @@
                     },
                     {
                         "type": "Goalkeeper Saves",
-                        "value": 0
+                        "value": 3
                     },
                     {
                         "type": "Total passes",
-                        "value": 0
+                        "value": 85
                     },
                     {
                         "type": "Passes accurate",
-                        "value": 10
+                        "value": 70
                     },
                     {
                         "type": "Passes %",
-                        "value": "0%"
+                        "value": "82%"
                     }
                 ]
             }

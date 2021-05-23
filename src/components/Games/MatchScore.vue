@@ -11,7 +11,7 @@
       </div>
       <div class="match-score--content__score">
           <div class="match-score--content__score--scores">{{scoreData.teamHome.score}} - {{scoreData.teamAway.score}}</div>
-          <div class="match-score--content__score--time">{{scoreData.time}}'</div>
+          <div class="match-score--content__score--time">{{scoreData.time}}</div>
       </div>
       <div class="match-score--content__away">
         <div class="match-score--content__away--info">

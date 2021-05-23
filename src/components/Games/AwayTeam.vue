@@ -1,59 +1,103 @@
 <template>
   <div class="line-up">
     <div class="line-up--pitch">
-      <div class="line-up--pitch__formation">{{ formation }}</div>
+      <div class="line-up--pitch__formation">
+        {{ squadData.teamAway.formation }}
+      </div>
       <div class="line-up--pitch__position gk">
         <div class="line-up--pitch__position--player">
-          <div class="line-up--pitch__position--player__number">1</div>
-          <div class="line-up--pitch__position--player__name">{{ gk }}</div>
+          <div class="line-up--pitch__position--player__number">
+            {{ squadData.teamAway.startXI[0].gk.player.number }}
+          </div>
+          <div class="line-up--pitch__position--player__name">
+            {{ squadData.teamAway.startXI[0].gk.player.name }}
+          </div>
         </div>
       </div>
       <div class="line-up--pitch__position def">
         <div class="line-up--pitch__position--player">
-          <div class="line-up--pitch__position--player__number captain">5</div>
-          <div class="line-up--pitch__position--player__name">{{ lcb }}</div>
+          <div class="line-up--pitch__position--player__number">
+            {{ squadData.teamAway.startXI[0].lb.player.number }}
+          </div>
+          <div class="line-up--pitch__position--player__name">
+            {{ squadData.teamAway.startXI[0].lb.player.name }}
+          </div>
         </div>
         <div class="line-up--pitch__position--player">
-          <div class="line-up--pitch__position--player__number">2</div>
-          <div class="line-up--pitch__position--player__name">{{ cb }}</div>
+          <div class="line-up--pitch__position--player__number">
+            {{ squadData.teamAway.startXI[0].lcb.player.number }}
+          </div>
+          <div class="line-up--pitch__position--player__name">
+            {{ squadData.teamAway.startXI[0].lcb.player.name }}
+          </div>
         </div>
         <div class="line-up--pitch__position--player">
-          <div class="line-up--pitch__position--player__number">29</div>
-          <div class="line-up--pitch__position--player__name">{{ rcb }}</div>
+          <div class="line-up--pitch__position--player__number">
+            {{ squadData.teamAway.startXI[0].rcb.player.number }}
+          </div>
+          <div class="line-up--pitch__position--player__name">
+            {{ squadData.teamAway.startXI[0].rcb.player.name }}
+          </div>
+        </div>
+        <div class="line-up--pitch__position--player">
+          <div class="line-up--pitch__position--player__number">
+            {{ squadData.teamAway.startXI[0].rb.player.number }}
+          </div>
+          <div class="line-up--pitch__position--player__name">
+            {{ squadData.teamAway.startXI[0].rb.player.name }}
+          </div>
         </div>
       </div>
-      <div class="line-up--pitch__position def-mid">
+      <div class="line-up--pitch__position mid">
         <div class="line-up--pitch__position--player">
-          <div class="line-up--pitch__position--player__number">23</div>
-          <div class="line-up--pitch__position--player__name">{{ lm }}</div>
+          <div class="line-up--pitch__position--player__number">
+            {{ squadData.teamAway.startXI[0].lcm.player.number }}
+          </div>
+          <div class="line-up--pitch__position--player__name">
+            {{ squadData.teamAway.startXI[0].lcm.player.name }}
+          </div>
         </div>
         <div class="line-up--pitch__position--player">
-          <div class="line-up--pitch__position--player__number">17</div>
-          <div class="line-up--pitch__position--player__name">{{ ldm }}</div>
+          <div class="line-up--pitch__position--player__number">
+            {{ squadData.teamAway.startXI[0].cm.player.number }}
+          </div>
+          <div class="line-up--pitch__position--player__name">
+            {{ squadData.teamAway.startXI[0].cm.player.name }}
+          </div>
         </div>
         <div class="line-up--pitch__position--player">
-          <div class="line-up--pitch__position--player__number">39</div>
-          <div class="line-up--pitch__position--player__name">{{ rdm }}</div>
-        </div>
-        <div class="line-up--pitch__position--player">
-          <div class="line-up--pitch__position--player__number">10</div>
-          <div class="line-up--pitch__position--player__name">{{ rm }}</div>
-        </div>
-      </div>
-      <div class="line-up--pitch__position att-mid">
-        <div class="line-up--pitch__position--player">
-          <div class="line-up--pitch__position--player__number">18</div>
-          <div class="line-up--pitch__position--player__name">{{ cam }}</div>
+          <div class="line-up--pitch__position--player__number">
+            {{ squadData.teamAway.startXI[0].rcm.player.number }}
+          </div>
+          <div class="line-up--pitch__position--player__name">
+            {{ squadData.teamAway.startXI[0].rcm.player.name }}
+          </div>
         </div>
       </div>
       <div class="line-up--pitch__position att">
         <div class="line-up--pitch__position--player">
-          <div class="line-up--pitch__position--player__number">7</div>
-          <div class="line-up--pitch__position--player__name">{{ lst }}</div>
+          <div class="line-up--pitch__position--player__number">
+            {{ squadData.teamAway.startXI[0].lw.player.number }}
+          </div>
+          <div class="line-up--pitch__position--player__name">
+            {{ squadData.teamAway.startXI[0].lw.player.name }}
+          </div>
         </div>
         <div class="line-up--pitch__position--player">
-          <div class="line-up--pitch__position--player__number">11</div>
-          <div class="line-up--pitch__position--player__name">{{ rst }}</div>
+          <div class="line-up--pitch__position--player__number">
+            {{ squadData.teamAway.startXI[0].st.player.number }}
+          </div>
+          <div class="line-up--pitch__position--player__name">
+            {{ squadData.teamAway.startXI[0].st.player.name }}
+          </div>
+        </div>
+        <div class="line-up--pitch__position--player">
+          <div class="line-up--pitch__position--player__number">
+            {{ squadData.teamAway.startXI[0].rw.player.number }}
+          </div>
+          <div class="line-up--pitch__position--player__name">
+            {{ squadData.teamAway.startXI[0].rw.player.name }}
+          </div>
         </div>
       </div>
     </div>
@@ -62,47 +106,62 @@
         <div class="line-up--subs-left__head">Substitutes</div>
         <div class="line-up--subs-left__players">
           <div class="line-up--subs-left__players--player">
-            <div class="line-up--subs-left__players--player__number">26</div>
+            <div class="line-up--subs-left__players--player__number">
+              {{ squadData.teamAway.substitutes[0].sub1.player.number }}
+            </div>
             <div class="line-up--subs-left__players--player__name">
-              {{ subOne }}
+              {{ squadData.teamAway.substitutes[0].sub1.player.name }}
             </div>
           </div>
           <div class="line-up--subs-left__players--player">
-            <div class="line-up--subs-left__players--player__number">3</div>
+            <div class="line-up--subs-left__players--player__number">
+              {{ squadData.teamAway.substitutes[0].sub2.player.number }}
+            </div>
             <div class="line-up--subs-left__players--player__name">
-              {{ subTwo }}
+              {{ squadData.teamAway.substitutes[0].sub2.player.name }}
             </div>
           </div>
           <div class="line-up--subs-left__players--player">
-            <div class="line-up--subs-left__players--player__number">28</div>
+            <div class="line-up--subs-left__players--player__number">
+              {{ squadData.teamAway.substitutes[0].sub3.player.number }}
+            </div>
             <div class="line-up--subs-left__players--player__name">
-              {{ subThree }}
+              {{ squadData.teamAway.substitutes[0].sub3.player.name }}
             </div>
           </div>
           <div class="line-up--subs-left__players--player">
-            <div class="line-up--subs-left__players--player__number">38</div>
+            <div class="line-up--subs-left__players--player__number">
+              {{ squadData.teamAway.substitutes[0].sub4.player.number }}
+            </div>
             <div class="line-up--subs-left__players--player__name">
-              {{ subFour }}
+              {{ squadData.teamAway.substitutes[0].sub4.player.name }}
             </div>
           </div>
           <div class="line-up--subs-left__players--player">
-            <div class="line-up--subs-left__players--player__number">6</div>
+            <div class="line-up--subs-left__players--player__number">
+              {{ squadData.teamAway.substitutes[0].sub5.player.number }}
+            </div>
             <div class="line-up--subs-left__players--player__name">
-              {{ subFive }}
+              {{ squadData.teamAway.substitutes[0].sub5.player.name }}
             </div>
           </div>
           <div class="line-up--subs-left__players--player">
-            <div class="line-up--subs-left__players--player__number">34</div>
+            <div class="line-up--subs-left__players--player__number">
+              {{ squadData.teamAway.substitutes[0].sub6.player.number }}
+            </div>
             <div class="line-up--subs-left__players--player__name">
-              {{ subSix }}
+              {{ squadData.teamAway.substitutes[0].sub6.player.name }}
             </div>
           </div>
           <div class="line-up--subs-left__players--player">
-            <div class="line-up--subs-left__players--player__number">9</div>
+            <div class="line-up--subs-left__players--player__number">
+              {{ squadData.teamAway.substitutes[0].sub7.player.number }}
+            </div>
             <div class="line-up--subs-left__players--player__name">
-              {{ subSeven }}
+              {{ squadData.teamAway.substitutes[0].sub7.player.name }}
             </div>
           </div>
+        
         </div>
       </div>
       <div class="line-up--subs-right">
@@ -110,7 +169,7 @@
         <div class="line-up--subs-right__players">
           <div class="line-up--subs-right__players--player">
             <div class="line-up--subs-right__players--player__name">
-              {{ staffOne }}
+              {{ squadData.teamAway.coach.name }}
             </div>
           </div>
         </div>
@@ -122,30 +181,6 @@
 <script>
 export default {
   name: "AwayTeam",
-  props: [""],
-  data() {
-    return {
-      formation: "3-5-2",
-      gk: "De Gea",
-      lm: "Shaw",
-      lcb: "Maguire",
-      cb: "Lindelof",
-      rcb: "Wan-Bissaka",
-      ldm: "Fred",
-      rdm: "McTominay",
-      rm: "Rashford",
-      cam: "Fernandes",
-      lst: "Greenwood",
-      rst: "Cavani",
-      subOne: "Henderson",
-      subTwo: "Bailly",
-      subThree: "Telles",
-      subFour: "Tuanzebe",
-      subFive: "Pogba",
-      subSix: "van de Beek",
-      subSeven: "Martial",
-      staffOne: "Ole Gunnar Solkjaer"
-    };
-  },
+  props: ["squadData"]
 };
 </script>
