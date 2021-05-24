@@ -43,7 +43,13 @@ const routes = [
   name: "Match",
   component: () =>
     import(/* webpackChunkName: "myteam" */ "../components/Games/Match.vue"),
-  }
+  },
+  {
+    path: "/Games/PreviousMatch",
+    name: "MatchPrevious",
+    component: () =>
+      import(/* webpackChunkName: "myteam" */ "../components/Games/MatchPrevious.vue"),
+    }
 ];
 
 const router = new VueRouter({

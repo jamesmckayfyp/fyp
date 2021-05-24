@@ -36,6 +36,18 @@
                     "type": "Goal",
                     "player": "Player 2",
                     "time": "37'"
+                },
+                {
+                    "team": "Home",
+                    "type": "Red",
+                    "player": "Player 4",
+                    "time": "56'"
+                },
+                {
+                    "team": "Away",
+                    "type": "Goal",
+                    "player": "Player 3",
+                    "time": "78'"
                 }
             ]
         },
