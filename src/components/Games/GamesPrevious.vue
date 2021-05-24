@@ -2,7 +2,7 @@
   <div class="games-previous">
     <MatchHeader
       league="Championship"
-      type="Matchday 45"
+      type="Matchday 44"
     />
 
     <MatchBlockPrevious

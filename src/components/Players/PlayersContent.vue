@@ -2,7 +2,7 @@
   <div class="container">
     <PlayerHeader />
     <PlayerInfo />
-    <PlayerRadar />
+    <!-- <PlayerRadar /> -->
     <PlayerStats />
   </div>
 </template>

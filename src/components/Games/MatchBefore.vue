@@ -2,16 +2,14 @@
   <div class="container">
     <MatchScore :scoreData="matchData.match.matchInfo"/>
     <MatchInfo :infoData="matchData.match.matchInfo"/>
-    <MatchEvents :eventData="matchData.match.matchEvents"/>
-    <MatchStats :statData="matchData.match.matchStats"/>
-    <MatchSquadPrevious :squadData="matchData.match.matchSquads"/>
+    <MatchSquad :squadData="matchData.match.matchSquads"/>
   </div>
 </template>
 
 <script>
 import MatchScore from "./MatchScore";
 import MatchInfo from "./MatchInfo";
-import MatchSquadPrevious from "./MatchSquadPrevious";
+import MatchSquad from "./MatchSquad";
 import MatchStats from "./MatchStats";
 import MatchEvents from "./MatchEvents";
 import HomeTeam from "./HomeTeam";
@@ -22,7 +20,7 @@ export default {
   components: {
     MatchScore,
     MatchInfo,
-    MatchSquadPrevious,
+    MatchSquad,
     MatchStats,
     MatchEvents,
     HomeTeam,
@@ -30,7 +28,7 @@ export default {
   },
   data() {
     return {
-      url: "https://jamesmckayfyp.github.io/fyp/src/json/PreviousMatch.json",
+      url: "https://jamesmckayfyp.github.io/fyp/src/json/Match1.json",
       matchData: [],
     };
   },
