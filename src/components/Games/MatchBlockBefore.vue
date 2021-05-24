@@ -11,7 +11,7 @@
           <!-- <div class="match-block--content__info--score">
             {{scoreData.teamHome.score}} - {{scoreData.teamAway.score}}
           </div> -->
-          <div class="match-block--content__info--time">{{scoreData.time}}</div>
+          <div class="match-block--content__info--time">16:00</div>
         </div>
         <div class="match-block--content__team away">
           <div class="match-block--content__team--img">
