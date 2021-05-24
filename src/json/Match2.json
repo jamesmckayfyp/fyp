@@ -24,16 +24,18 @@
             }
         },
         "matchEvents": {
-            "teamHome": [{
-                    "time": "21'",
-                    "player": "Buendia",
-                    "type": "Goal"
-                }
-            ],
-            "teamAway": [{
+            "events": [
+                {
+                    "team": "Away",
                     "time": "18'",
                     "player": "Toney",
                     "type": "Yellow"
+                },
+                {
+                    "team": "Home",
+                    "time": "21'",
+                    "player": "Buendia",
+                    "type": "Goal"
                 }
             ]
         },

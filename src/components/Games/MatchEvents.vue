@@ -7,15 +7,15 @@
           <div class="events--home" v-if="item.team == 'Home'">
             <div class="events--home__block">
               <div class="time">{{ item.time }}</div>
-              <div class="player">{{ item.player }}</div>
               <div class="type">{{ item.type }}</div>
+              <div class="player">{{ item.player }}</div>
             </div>
           </div>
           <div class="events--away" v-if="item.team == 'Away'">
             <div class="events--away__block">
-              <div class="time">{{ item.time }}</div>
               <div class="player">{{ item.player }}</div>
               <div class="type">{{ item.type }}</div>
+              <div class="time">{{ item.time }}</div>
             </div>
           </div>
           <!-- <div

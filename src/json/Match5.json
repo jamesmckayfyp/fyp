@@ -24,33 +24,39 @@
             }
         },
         "matchEvents": {
-            "teamHome": [{
-                    "time": "21'",
-                    "player": "Buendia",
-                    "type": "Goal"
-                },
+            "events": [
                 {
-                    "time": "48'",
-                    "player": "Skipp",
-                    "type": "Goal"
-                }
-            ],
-            "teamAway": [{
+                    "team": "Away",
                     "time": "18'",
                     "player": "Toney",
                     "type": "Yellow"
                 },
                 {
+                    "team": "Home",
+                    "time": "21'",
+                    "player": "Buendia",
+                    "type": "Goal"
+                },
+                {
+                    "team": "Away",
                     "time": "43'",
                     "player": "Toney",
                     "type": "Goal"
                 },
                 {
+                    "team": "Home",
+                    "time": "48'",
+                    "player": "Skipp",
+                    "type": "Goal"
+                },
+                {
+                    "team": "Away",
                     "time": "56'",
                     "player": "Mbuemo",
                     "type": "Goal"
                 },
                 {
+                    "team": "Away",
                     "time": "85'",
                     "player": "Toney",
                     "type": "Goal"
