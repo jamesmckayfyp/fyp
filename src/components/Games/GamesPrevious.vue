@@ -1,48 +1,40 @@
 <template>
   <div class="games-previous">
     <MatchHeader
-      v-for="competition in competitions"
-      v-bind:key="competition.id"
-      :league="competition.league"
-      :type="competition.type"
+      league="Championship"
+      type="Matchday 45"
     />
 
-    <MatchBlock
-      v-for="competition in competitions"
-      v-bind:key="competition.id"
-      :homeTeam="competition.match.homeTeam"
-      :awayTeam="competition.match.awayTeam"
-      :homeScore="competition.match.homeScore"
-      :awayScore="competition.match.awayScore"
-      :time="competition.match.time"
+    <MatchBlockPrevious
+       :scoreData="matchData.match.matchInfo"
     />
   </div>
 </template>
 
 <script>
 import MatchHeader from "./MatchHeader";
-import MatchBlock from "./MatchBlock";
+import MatchBlockPrevious from "./MatchBlockPrevious";
 
 export default {
   name: "GamesPrevious",
-  components: { MatchHeader, MatchBlock },
+  components: { MatchHeader, MatchBlockPrevious },
   data() {
     return {
-      competitions: [
-        {
-          id: 1,
-          league: "Championship",
-          type: "Matchday 44",
-          match: {
-            homeTeam: "LIV",
-            awayTeam: "CHE",
-            homeScore: 3,
-            awayScore: 4,
-            time: "FT"
-          }
-        },
-      ],
+      url: "https://jamesmckayfyp.github.io/fyp/src/json/PreviousMatch.json",
+      matchData: [],
     };
-  }
+  },
+  created: function () {
+    this.fetchData(this.url);
+  },
+  methods: {
+    fetchData(url) {
+      fetch(url)
+        .then((res) => res.json())
+        .then((res) => {
+          this.matchData = res;
+        });
+    },
+  },
 };
 </script>

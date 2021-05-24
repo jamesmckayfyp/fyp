@@ -1,20 +1,12 @@
 <template>
   <div class="games-live">
     <MatchHeader
-      v-for="competition in competitions"
-      v-bind:key="competition.id"
-      :league="competition.league"
-      :type="competition.type"
+      league="Championship"
+      type="Matchday 45"
     />
 
     <MatchBlock
-      v-for="competition in competitions"
-      v-bind:key="competition.id"
-      :homeTeam="competition.match.homeTeam"
-      :awayTeam="competition.match.awayTeam"
-      :homeScore="competition.match.homeScore"
-      :awayScore="competition.match.awayScore"
-      :time="competition.match.time"
+      :scoreData="matchData.match.matchInfo"
     />
   </div>
 </template>
@@ -28,21 +20,21 @@ export default {
   components: { MatchHeader, MatchBlock },
   data() {
     return {
-      competitions: [
-        {
-          id: 1,
-          league: "Championship",
-          type: "Matchday 45",
-          match: {
-            homeTeam: "BRI",
-            awayTeam: "NEW",
-            homeScore: 3,
-            awayScore: 1,
-            time: "78'"
-          }
-        },
-      ],
+      url: "https://jamesmckayfyp.github.io/fyp/src/json/Match1.json",
+      matchData: [],
     };
-  }
+  },
+  created: function () {
+    this.fetchData(this.url);
+  },
+  methods: {
+    fetchData(url) {
+      fetch(url)
+        .then((res) => res.json())
+        .then((res) => {
+          this.matchData = res;
+        });
+    },
+  },
 };
 </script>

@@ -1,5 +1,5 @@
 <template>
-  <router-link to="/Games/Match" alt="View Match" class="match-block">
+  <router-link to="/Games/PreviousMatch" alt="View Match" class="match-block">
       <div class="match-block--content">
         <div class="match-block--content__team home">
           {{scoreData.teamHome.team.shortName}}
@@ -25,11 +25,11 @@
 </template>
 
 <script>
-import Match from "./Match";
+import MatchPrevious from "./MatchPrevious";
 
 export default {
   name: "MatchBlock",
-  components: { Match },
+  components: { MatchPrevious },
   props: ["scoreData"],
 };
 </script>
